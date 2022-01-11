@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="zxx">
   <head>
     <!-- Required meta tags -->
@@ -8,19 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>World Vision</title>
     <!-- plugin css for this page -->
-    <link
-      rel="stylesheet"
-      href="{% static 'vendors/mdi/css/materialdesignicons.min.css' %}"
-    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'vendors/mdi/css/materialdesignicons.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'vendors/aos/dist/aos.css/aos.css' %}" />
-    <link
-      rel="stylesheet"
-      href="{% static 'vendors/owl.carousel/dist/assets/owl.carousel.min.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'vendors/owl.carousel/dist/assets/owl.theme.default.min.css' %}"
-    />
+    <link rel="stylesheet" href="{% static 'vendors/owl.carousel/dist/assets/owl.carousel.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'vendors/owl.carousel/dist/assets/owl.theme.default.min.css' %}"/>
     <!-- End plugin css for this page -->
     <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
     <!-- inject:css -->
@@ -177,9 +168,7 @@
                   />
                 </div>
                 <h5 class="m-0 font-weight-bold">
-                  <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=100&oid=018&aid=0005124634" class="nav-link">
-                  합참 “北미사일, 사거리 700km, 마하10 이상…엿새 전보다 진전"
-                  </a>
+                  How Hungary produced the
                 </h5>
               </div>
               <div class="d-flex justify-content-between mb-3 mb-lg-0">
