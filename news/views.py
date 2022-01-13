@@ -102,7 +102,10 @@ def NCategory(req):
     nn = NC[0].n_content
 
     return render(req, "travel1.html", {"NCategory": nn})
+<<<<<<< HEAD
 
 def home(req):
     ns = N_summarization.objects.all()
     return render(req, 'home.html', {'ns': ns}) 
+=======
+>>>>>>> 52ff0fa5d60c4e4a8105eb5c84acf5822031daf0
