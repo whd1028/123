@@ -1,16 +1,7 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% for ns in NSummarization.all %}
-    <h1>{{ns.ns_id}}</h1>
-    <p>{{ns.n}}</p>
-    <p>{{ns.ns_content}}</p>
-    {%endfor%}
-
-</body>
-</html>
+{% for nsum in ns %}
+    <div>
+        <p>published: {{ nsum.ns_id }}</p>
+        <h1><a href="">{{ nsum.n }}</a></h1>
+        <p>{{ nsum.ns_content }}</p>
+    </div>
+{% endfor %}

@@ -103,7 +103,7 @@ def travel1(req):
 
 def home(req):
     ns = NSummarization.objects.all()
-    return render(req, "home.html", {'NSummarization': ns})
+    return render(req, "home.html", {'ns': ns})
 
 def NCategory(req):
     NC = NCategory.objects.all()
