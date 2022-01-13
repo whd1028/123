@@ -114,5 +114,6 @@ def home(req):
 
 def NSummarization(req):
     ns = N_summarization.objects.all()
-    raw = f"select * from NSummarization limit 15"
+    # get_content = News.objects.all()
+    # raw = f"select n_id, o_link from News inner join News on News.n_id where ns_content = '{get_content.ns_content}'"
     return render(req, 'home.html', {'ns': ns})
