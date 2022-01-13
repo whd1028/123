@@ -92,9 +92,25 @@ def travel1(req):
 
     return render(req, "travel1.html", context=context)
 
-
 def NCategory(req):
-    NC = N_Category.objects.all()
-    a = NC[0]
-    an = a.c_name
-    return render(req, "travel1.html", {"NCategory": an})
+
+    n = 3
+    get_title = News.objects.get(n_id=n)
+    title = "계룡시, 시민과 함께한 2020년 해맞이행사 성료"
+    raw = f"select nc_id, n_content from N_content inner join News on N_content.n_id = News.n_id  where n_title = '{get_title.n_title}'"
+    NC = N_content.objects.raw(raw)
+    nn = NC[0].n_content
+
+    return render(req, "travel1.html", {"NCategory": nn})
+    
+def home(req):
+    ns = N_summarization.objects.all()
+    return render(req, 'home.html', {'ns': ns})
+
+
+# def NCategory(req):
+#     NC = N_Category.objects.all()
+#     a = NC[0]
+#     an = a.c_name
+#     return render(req, "travel1.html", {"NCategory": an})
+
