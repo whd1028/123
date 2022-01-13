@@ -10,6 +10,8 @@ urlpatterns = [
     path("sports/", views.sports, name="sports"),
     path("art/", views.art, name="art"),
     path("world/", views.world, name="world"),
-    # path("post/<int:pk>", views.PostDetailView.as_view(), name="post"),
-    # path("post/create", views.PostCreate.as_view(), name="post_create"),
+    path("travel/", views.travel, name="travel"),
+    path("travel1/", views.NCategory, name="NCategory"),
+    path("home/", views.home, name="home"),
 ]
+
