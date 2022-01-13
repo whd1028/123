@@ -1,6 +1,8 @@
 from django.urls import path
 from news import views
 
+
+
 urlpatterns = [
     path("", views.index, name="index"),
     path("author/", views.author, name="author"),
