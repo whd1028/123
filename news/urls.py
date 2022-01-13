@@ -11,6 +11,5 @@ urlpatterns = [
     path("art/", views.art, name="art"),
     path("world/", views.world, name="world"),
     path("travel/", views.travel, name="travel"),
-    #path("travel1/", views.travel1, name="travel1"),
     path("travel1/", views.NCategory, name="NCategory"),
 ]
