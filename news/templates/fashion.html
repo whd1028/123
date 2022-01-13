@@ -31,7 +31,7 @@
         var currentDate = new Date();
         var divClock = document.getElementById('divClock');
         var msg = "";
-        if(currentDate.getHours()>12){      //시간이 12보다 크다면 오후 아니면 오전
+        if(currentDate.getHours()>12){
           msg += "오후 ";
           msg += currentDate.getHours()-12+"시 ";
        }
@@ -44,10 +44,10 @@
 
         divClock.innerText = msg;
 
-        if (currentDate.getMinutes()>58) {    //정각 1분전부터 빨강색으로 출력
+        if (currentDate.getMinutes()>58) {
           divClock.style.color="red";
         }
-        setTimeout(showClock,1000);  //1초마다 갱신
+        setTimeout(showClock,1000);
       }
     </script>
   </head>
@@ -131,25 +131,28 @@
                       </button>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link active" href="index.html">Home</a>
+                      <a class="nav-link active" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/world.html">Politics</a>
+                      <a class="nav-link" href="{% url 'author' %}">언론사별</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/author.html">Economy</a>
+                      <a class="nav-link" href="{% url 'politics' %}">정치</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/news-post.html">Society</a>
+                      <a class="nav-link" href="{% url 'post' %}">사회</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/business.html">Living/Culture</a>
+                      <a class="nav-link" href="{% url 'business' %}">경제</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/sports.html">IT/Science</a>
+                      <a class="nav-link" href="{% url 'sports' %}">스포츠</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/art.html">World</a>
+                      <a class="nav-link" href="{% url 'art' %}">미술</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'world' %}">세계</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a>

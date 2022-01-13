@@ -128,25 +128,28 @@
                       </button>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link active" href="index.html">Home</a>
+                      <a class="nav-link active" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/world.html">Politics</a>
+                      <a class="nav-link" href="{% url 'author' %}">언론사별</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/author.html">Economy</a>
+                      <a class="nav-link" href="{% url 'politics' %}">정치</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/news-post.html">Society</a>
+                      <a class="nav-link" href="{% url 'post' %}">사회</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/business.html">Living/Culture</a>
+                      <a class="nav-link" href="{% url 'business' %}">경제</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/sports.html">IT/Science</a>
+                      <a class="nav-link" href="{% url 'sports' %}">스포츠</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/art.html">World</a>
+                      <a class="nav-link" href="{% url 'art' %}">미술</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'world' %}">세계</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a>

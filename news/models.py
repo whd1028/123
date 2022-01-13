@@ -27,26 +27,6 @@ class N_CategoryDetail(models.Model):
         db_table = 'N_category_detail'
 
 
-class N_content(models.Model):
-    nc_id = models.AutoField(primary_key=True)
-    n = models.OneToOneField('News', models.DO_NOTHING, blank=True, null=True)
-    n_content = models.TextField(blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'N_content'
-
-
-class N_summarization(models.Model):
-    ns_id = models.AutoField(primary_key=True)
-    n = models.OneToOneField('News', models.DO_NOTHING, blank=True, null=True)
-    ns_content = models.TextField(blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'N_summarization'
-
-
 class News(models.Model):
     n_id = models.AutoField(primary_key=True)
     p = models.ForeignKey('Press', models.DO_NOTHING, blank=True, null=True)
@@ -59,6 +39,26 @@ class News(models.Model):
     class Meta:
         managed = False
         db_table = 'News'
+
+class N_content(models.Model):
+    nc_id = models.AutoField(primary_key=True)
+    n = models.ForeignKey('News', models.DO_NOTHING, blank=True, null=True)
+    n_content = models.TextField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'N_content'
+
+
+class N_summarization(models.Model):
+    ns_id = models.AutoField(primary_key=True)
+    n = models.ForeignKey('News', models.DO_NOTHING, blank=True, null=True)
+    ns_content = models.TextField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'N_summarization'
+
 
 
 class Press(models.Model):

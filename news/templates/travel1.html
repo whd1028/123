@@ -134,22 +134,25 @@
                       <a class="nav-link active" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'world' %}">Politics</a>
+                      <a class="nav-link" href="{% url 'author' %}">언론사별</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'author' %}">Economy</a>
+                      <a class="nav-link" href="{% url 'politics' %}">정치</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'post' %}">Society</a>
+                      <a class="nav-link" href="{% url 'post' %}">사회</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'business' %}">Living/Culture</a>
+                      <a class="nav-link" href="{% url 'business' %}">경제</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'sports' %}">IT/Science</a>
+                      <a class="nav-link" href="{% url 'sports' %}">스포츠</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'art' %}">World</a>
+                      <a class="nav-link" href="{% url 'art' %}">미술</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'world' %}">세계</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a>
@@ -182,27 +185,7 @@
             </div>
           </div>
           <div class="col-lg-6  mb-5 mb-sm-2">
-            <div class="row">
-              <div class="col-sm-6  mb-5 mb-sm-2">
-                <div class="position-relative image-hover">
-                  {{ NCategory }}
-                </div>
-              </div>
-              <div class="col-sm-6  mb-5 mb-sm-2">
-                <div class="position-relative image-hover">
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-6  mb-5 mb-sm-2">
-                <div class="position-relative image-hover">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="position-relative image-hover">
-                </div>
-              </div>
-            </div>
+            {{ NCategory }}
           </div>
         </div>
         <div class="row mt-5">
