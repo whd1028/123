@@ -103,3 +103,16 @@ def NCategory(req):
     nn = NC[0].n_content
 
     return render(req, "travel1.html", {"NCategory": nn})
+
+def home(req):
+    context = {
+
+    }
+
+    return render(req, "travel1.html", context=context)
+
+
+def NSummarization(req):
+    ns = N_summarization.objects.all()
+    raw = f"select * from NSummarization limit 15"
+    return render(req, 'home.html', {'ns': ns})
