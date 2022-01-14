@@ -10,19 +10,19 @@
     <!-- plugin css for this page -->
     <link
       rel="stylesheet"
-      href="../assets/vendors/mdi/css/materialdesignicons.min.css"
+      href="{% static 'vendors/mdi/css/materialdesignicons.min.css' %}"
     />
     <!-- End plugin css for this page -->
-    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
     <!-- inject:css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- endinject -->
     <script type="text/javascript">
       function showClock(){
         var currentDate = new Date();
         var divClock = document.getElementById('divClock');
         var msg = "";
-        if(currentDate.getHours()>12){      //시간이 12보다 크다면 오후 아니면 오전
+        if(currentDate.getHours()>12){
           msg += "오후 ";
           msg += currentDate.getHours()-12+"시 ";
        }
@@ -35,10 +35,10 @@
 
         divClock.innerText = msg;
 
-        if (currentDate.getMinutes()>58) {    //정각 1분전부터 빨강색으로 출력
+        if (currentDate.getMinutes()>58) {
           divClock.style.color="red";
         }
-        setTimeout(showClock,1000);  //1초마다 갱신
+        setTimeout(showClock,1000);
       }
     </script>
   </head>
@@ -56,7 +56,7 @@
                 </ul>
                 <div>
                   <a class="navbar-brand" href="#"
-                    ><img src="../assets/images/logo.svg" alt=""
+                    ><img src="{% static 'images/logo.svg' %}" alt=""
                   /></a>
                 </div>
                 <div class="d-flex">
@@ -122,25 +122,28 @@
                       </button>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link active" href="index.html">Home</a>
+                      <a class="nav-link active" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/world.html">Politics</a>
+                      <a class="nav-link" href="{% url 'author' %}">언론사별</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/author.html">Economy</a>
+                      <a class="nav-link" href="{% url 'politics' %}">정치</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/news-post.html">Society</a>
+                      <a class="nav-link" href="{% url 'post' %}">사회</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/business.html">Living/Culture</a>
+                      <a class="nav-link" href="{% url 'business' %}">경제</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/sports.html">IT/Science</a>
+                      <a class="nav-link" href="{% url 'sports' %}">스포츠</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="pages/art.html">World</a>
+                      <a class="nav-link" href="{% url 'art' %}">미술</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'world' %}">세계</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a>
@@ -169,7 +172,7 @@
                 class="fs-15 d-flex justify-content-center align-items-center m-0"
               >
                 <img
-                  src="../assets/images/dashboard/Profile_1.jpg"
+                  src="{% static 'images/dashboard/Profile_1.jpg' %}"
                   alt=""
                   class="img-xs img-rounded mr-2"
                 />
@@ -184,7 +187,7 @@
               </p>
             </div>
             <img
-              src="../assets/images/news/news-1.jpg"
+              src="{% static 'images/news/news-1.jpg' %}"
               alt="news"
               class="img-fluid mb-4"
             />
@@ -200,7 +203,7 @@
             <div class="row mb-5">
               <div class="col-lg-6">
                 <img
-                  src="../assets/images/news/news-2.jpg"
+                  src="{% static 'images/news/news-2.jpg' %}"
                   alt="news"
                   class="img-fluid mb-4"
                 />
@@ -242,14 +245,14 @@
             <div class="row">
               <div class="col-sm-6">
                 <img
-                  src="../assets/images/news/news-4.jpg"
+                  src="{% static 'images/news/news-4.jpg' %}"
                   alt="news"
                   class="img-fluid"
                 />
               </div>
               <div class="col-sm-6">
                 <img
-                  src="../assets/images/news/news-5.jpg"
+                  src="{% static 'images/news/news-5.jpg' %}"
                   alt="news"
                   class="img-fluid"
                 />
@@ -300,7 +303,7 @@
               </div>
               <div class="text-center">
                 <img
-                  src="../assets/images/dashboard/Profile_4.jpg"
+                  src="{% static 'images/dashboard/Profile_4.jpg' %}"
                   alt="news"
                   class="img-lg img-rounded img-fluid mb-3"
                 />
@@ -321,7 +324,7 @@
                   <div class="col-sm-4">
                     <div class="position-relative image-hover">
                       <img
-                        src="../assets/images/news/news-6.jpg"
+                        src="{% static 'images/news/news-6.jpg' %}"
                         alt="news"
                         class="img-fluid"
                       />
@@ -343,7 +346,7 @@
                   <div class="col-sm-4">
                     <div class="position-relative image-hover">
                       <img
-                        src="../assets/images/news/news-7.jpg"
+                        src="{% static 'images/news/news-7.jpg' %}"
                         alt="news"
                         class="img-fluid"
                       />
@@ -420,36 +423,36 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="d-flex justify-content-between">
-                  <img src="../assets/images/logo.svg" class="footer-logo" alt="" />
+                  <img src="{% static 'images/logo.svg' %}" class="footer-logo" alt="" />
 
                   <div class="d-flex justify-content-end footer-social">
                     <h5 class="m-0 font-weight-600 mr-3 d-none d-lg-flex">Follow on</h5>
                     <ul class="social-media">
                       <li>
-                        <a href="#">
-                          <i class="mdi mdi-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="mdi mdi-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="mdi mdi-youtube"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="mdi mdi-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="mdi mdi-twitter"></i>
-                        </a>
-                      </li>
+                      <a href="https://www.instagram.com/?hl=ko">
+                        <i class="mdi mdi-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/">
+                        <i class="mdi mdi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/">
+                        <i class="mdi mdi-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/">
+                        <i class="mdi mdi-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/">
+                        <i class="mdi mdi-twitter"></i>
+                      </a>
+                    </li>
                     </ul>
                   </div>
                 </div>
@@ -480,10 +483,10 @@
 
     <!-- partial -->
     <!-- inject:js -->
-    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="{% static 'vendors/js/vendor.bundle.base.js' %}"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script src="../assets/js/demo.js"></script>
+    <script src="{% static 'js/demo.js' %}"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

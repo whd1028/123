@@ -493,8 +493,8 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .img-thumbnail {
@@ -650,7 +650,7 @@ pre code {
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
   position: relative;
-  width: 100%;
+  width: 50%;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -9463,7 +9463,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .font-weight-bolder {
@@ -10377,8 +10377,8 @@ h6, .h6 {
 }
 
 .carousel-image {
-    width: 730px;
-    height: 335px;
+    width: 600px;
+    height: 340px;
 }
 
 .fs-10 {
@@ -10499,7 +10499,7 @@ h6, .h6 {
 
 .world-news,
 .popular-news {
-  padding: 37px 0;
+  padding: 10px 0;
 }
 
 .font-weight-600 {
@@ -10859,4 +10859,5 @@ footer .footer-logo {
 .search-container button:focus {
   outline: 0;
 }
+
 /*# sourceMappingURL=maps/style.css.map */

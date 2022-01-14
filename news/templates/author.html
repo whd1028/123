@@ -10,21 +10,21 @@
     <!-- plugin css for this page -->
     <link
       rel="stylesheet"
-      href="../assets/vendors/mdi/css/materialdesignicons.min.css"
+      href="{% static 'vendors/mdi/css/materialdesignicons.min.css' %}"
     />
-    <link rel="stylesheet" href="../assets/vendors/aos/dist/aos.css/aos.css" />
+    <link rel="stylesheet" href="{% static 'vendors/aos/dist/aos.css/aos.css' %}" />
     <link
       rel="stylesheet"
-      href="../assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css"
+      href="{% static 'vendors/owl.carousel/dist/assets/owl.carousel.min.css' %}"
     />
     <link
       rel="stylesheet"
-      href="../assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css"
+      href="{% static 'vendors/owl.carousel/dist/assets/owl.theme.default.min.css' %}"
     />
     <!-- End plugin css for this page -->
-    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
     <!-- inject:css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- endinject -->
     <script type="text/javascript">
       function showClock(){
@@ -51,7 +51,6 @@
       }
     </script>
   </head>
-
   <body onload="showClock()">
     <div class="container-scroller">
       <header id="header">
@@ -64,17 +63,17 @@
                   <li></li>
                 </ul>
                 <div>
-                  <a class="navbar-brand" href="#"
-                    ><img src="../assets/images/logo.svg" alt=""
+                  <a class="navbar-brand" href="{% url 'index' %}"
+                    ><img src="{% static 'images/logo.svg' %}" alt=""
                   /></a>
                 </div>
                 <div class="d-flex">
                   <ul class="navbar-right">
                     <li>
-                      <a href="index1.html">한글</a>
+                      <a href="{% url 'index' %}">한글</a>
                     </li>
                     <li>
-                      <a href="index.html">ENGLISH</a>
+                      <a href="{% url 'index' %}">ENGLISH</a>
                     </li>
                   </ul>
                   <ul class="social-media">
@@ -184,38 +183,38 @@
             <div class="author-box border p-5">
               <div class="text-center">
                 <img
-                  src="../assets/images/dashboard/Profile_4.jpg"
+                  src="{% static 'images/dashboard/Profile_4.jpg' %}"
                   alt="news"
                   class="img-lg img-fluid img-rounded mb-3"
                 />
                 <p class="fs-12 m-0">Of the Author</p>
                 <h5 class="mb-2 font-weight-medium">Nout Golstein</h5>
                 <ul class="social-media justify-content-center p-0 mt-3 mb-4">
-                  <li>
-                    <a href="#">
-                      <i class="mdi mdi-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="mdi mdi-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="mdi mdi-youtube"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="mdi mdi-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="mdi mdi-twitter"></i>
-                    </a>
-                  </li>
+                    <li>
+                      <a href="https://www.instagram.com/?hl=ko">
+                        <i class="mdi mdi-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/">
+                        <i class="mdi mdi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/">
+                        <i class="mdi mdi-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/">
+                        <i class="mdi mdi-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/">
+                        <i class="mdi mdi-twitter"></i>
+                      </a>
+                    </li>
                 </ul>
               </div>
               <p>
@@ -234,7 +233,7 @@
               <div class="col-sm-6  mb-5 mb-sm-2">
                 <div class="position-relative image-hover">
                   <img
-                    src="../assets/images/real-estate/Realestate_4.jpg"
+                    src="{% static 'images/real-estate/Realestate_4.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -250,7 +249,7 @@
               <div class="col-sm-6  mb-5 mb-sm-2">
                 <div class="position-relative image-hover">
                   <img
-                    src="../assets/images/real-estate/Realestate_2.jpg"
+                    src="{% static 'images/real-estate/Realestate_2.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -268,7 +267,7 @@
               <div class="col-sm-6  mb-5 mb-sm-2">
                 <div class="position-relative image-hover">
                   <img
-                    src="../assets/images/real-estate/Realestate_5.jpg"
+                    src="{% static 'images/real-estate/Realestate_5.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -284,7 +283,7 @@
               <div class="col-sm-6">
                 <div class="position-relative image-hover">
                   <img
-                    src="../assets/images/real-estate/Realestate_3.jpg"
+                    src="{% static 'images/real-estate/Realestate_3.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -309,7 +308,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_6.jpg"
+                src="{% static 'images/real-estate/Realestate_6.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -322,7 +321,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_10.jpg"
+                src="{% static 'images/real-estate/Realestate_10.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -335,7 +334,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_14.jpg"
+                src="{% static 'images/real-estate/Realestate_14.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -348,7 +347,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_16.jpg"
+                src="{% static 'images/real-estate/Realestate_16.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -363,7 +362,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_8.jpg"
+                src="{% static 'images/real-estate/Realestate_8.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -376,7 +375,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_12.jpg"
+                src="{% static 'images/real-estate/Realestate_12.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -389,7 +388,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_18.jpg"
+                src="{% static 'images/real-estate/Realestate_18.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -402,7 +401,7 @@
           <div class="col-sm-3  mb-5 mb-sm-2">
             <div class="position-relative image-hover">
               <img
-                src="../assets/images/real-estate/Realestate_20.jpg"
+                src="{% static 'images/real-estate/Realestate_20.jpg' %}"
                 class="img-fluid"
                 alt="world-news"
               />
@@ -426,22 +425,22 @@
               <div class="col-sm-3 col-lg-3">
                 <ul class="footer-vertical-nav">
                   <li class="menu-title"><a href="post.html">News</a></li>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="./world.html">World</a></li>
-                  <li><a href="./author.html">Magazine</a></li>
-                  <li><a href="./business.html">Business</a></li>
-                  <li><a href="./politics.html">Politics</a></li>
+                  <li><a href="{% url 'index' %}">Home</a></li>
+                  <li><a href="{% url 'world' %}">World</a></li>
+                  <li><a href="{% url 'author' %}">Magazine</a></li>
+                  <li><a href="{% url 'business' %}">Business</a></li>
+                  <li><a href="{% url 'politics' %}">Politics</a></li>
                 </ul>
               </div>
               <div class="col-sm-3 col-lg-3">
                 <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="./world.html">World</a></li>
-                  <li><a href="./sports.html">Sports</a></li>
-                  <li><a href="./art.html">Art</a></li>
+                  <li class="menu-title"><a href="{% url 'world' %}">World</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Art</a></li>
                   <li><a href="#">Magazine</a></li>
-                  <li><a href="./real-estate.html">Real estate</a></li>
-                  <li><a href="./travel.html">Travel</a></li>
-                  <li><a href="./author.html">Author</a></li>
+                  <li><a href="#">Real estate</a></li>
+                  <li><a href="#">Travel</a></li>
+                  <li><a href="#">Author</a></li>
                 </ul>
               </div>
               <div class="col-sm-3 col-lg-3">
@@ -449,7 +448,7 @@
                   <li class="menu-title"><a href="#">Features</a></li>
                   <li><a href="#">Photography</a></li>
                   <li><a href="#">Video</a></li>
-                  <li><a href="post.html">Newsletters</a></li>
+                  <li><a href="#">Newsletters</a></li>
                   <li><a href="#">Live Events</a></li>
                   <li><a href="#">Stores</a></li>
                   <li><a href="#">Jobs</a></li>
@@ -462,15 +461,15 @@
                   <li><a href="#">FAQ</a></li>
                   <li><a href="#">User Agreement</a></li>
                   <li><a href="#">Privacy</a></li>
-                  <li><a href="./aboutus.html">About us</a></li>
-                  <li><a href="./contactus.html">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact</a></li>
                 </ul>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
                 <div class="d-flex justify-content-between">
-                  <img src="../assets/images/logo.svg" class="footer-logo" alt="" />
+                  <img src="{% static 'images/logo.svg' %}" class="footer-logo" alt="" />
 
                   <div class="d-flex justify-content-end footer-social">
                     <h5 class="m-0 font-weight-600 mr-3 d-none d-lg-flex">Follow on</h5>
@@ -530,14 +529,14 @@
 
     <!-- partial -->
     <!-- inject:js -->
-    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="{% static 'vendors/js/vendor.bundle.base.js' %}"></script>
     <!-- endinject -->
     <!-- plugin js for this page -->
-    <script src="../assets/vendors/aos/dist/aos.js/aos.js"></script>
-    <script src="../assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="{% static 'vendors/aos/dist/aos.js/aos.js' %}"></script>
+    <script src="{% static 'vendors/owl.carousel/dist/owl.carousel.min.js' %}"></script>
     <!-- End plugin js for this page -->
     <!-- Custom js for this page-->
-    <script src="../assets/js/demo.js"></script>
+    <script src="{% static 'js/demo.js' %}"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

@@ -64,7 +64,7 @@
                   <li></li>
                 </ul>
                 <div>
-                  <a class="navbar-brand" href="#"
+                  <a class="navbar-brand" href="{% url 'index' %}"
                     ><img src="{% static 'images/logo.svg' %}" alt=""
                   /></a>
                 </div>
@@ -169,14 +169,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="text-center">
-              <p class="text-secondary fs-15">
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6  mb-5 mb-sm-2">
-            <div class="position-relative image-hover">
+              <br>
               <img
                 src="{%static 'images/business/Business_1.jpg' %}"
                 class="img-fluid"
@@ -184,8 +177,19 @@
               />
             </div>
           </div>
+            <p class="text-secondary fs-15">
+              <br>
+                {{ NCategory }}
+            </p>
+        </div>
+        <div class="row">
           <div class="col-lg-6  mb-5 mb-sm-2">
-            {{ NCategory }}
+            <div class="position-relative image-hover">
+
+            </div>
+          </div>
+          <div class="col-lg-6  mb-5 mb-sm-2">
+
           </div>
         </div>
         <div class="row mt-5">
