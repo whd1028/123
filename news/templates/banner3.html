@@ -1,0 +1,44 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#    {% load static %}#}
+{#</head>#}
+{#<body>#}
+{#    <ul>#}
+{#      {% block content %}#}
+{#            {% for sum in nm %}#}
+{#                <div class="post">#}
+{#                    <p>{{ sum.ns_id }}</p>#}
+{#                    <h1>#}
+{#                    <audio controls>#}
+{#                    <button type="button" source src="{% static 'tts/hi.mp3' %}" type="audio/mp3">#}
+{#                        {{ sum.n_id}}#}
+{#                    </button>#}
+{#                    </audio>#}
+{#                    </h1>#}
+{#                    <p>{{ sum.ns_content }}</p>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#      {% endblock %}#}
+{#    </ul>#}
+{#</body>#}
+{#</html>#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+</head>
+<body>
+<audio controls>
+    <source src="{% static 'tts/hi.mp3' %}" type="audio/mp3">
+ </audio>
+{% for sum in nm %}
+<p>{{ sum.ns_content }}</p>
+{% endfor %}
+</body>
+</html>

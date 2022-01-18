@@ -12,5 +12,6 @@ urlpatterns = [
     path("world/", views.world, name="world"),
     path("travel/", views.travel, name="travel"),
     path("travel1/", views.NCategory, name="NCategory"),
-    path("home/", views.NSummarization, name="NSummarization")
+    path("home/", views.NSummarization, name="NSummarization"),
+    path("banner3/", views.banner3, name="banner3"),
 ]

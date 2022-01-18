@@ -94,7 +94,6 @@ def travel1(req):
 
 
 def NCategory(req):
-
     n = 3
     get_title = News.objects.get(n_id=n)
     title = "계룡시, 시민과 함께한 2020년 해맞이행사 성료"
@@ -104,16 +103,22 @@ def NCategory(req):
 
     return render(req, "travel1.html", {"NCategory": nn})
 
+
 def home(req):
     context = {
 
     }
 
-    return render(req, "travel1.html", context=context)
+    return render(req, "home.html", context=context)
 
 
 def NSummarization(req):
-    ns = N_summarization.objects.all()
+    # ns = N_summarization.objects.all()
+    ns = N_summarization.objects.all()[:10]
     # get_content = News.objects.all()
     # raw = f"select n_id, o_link from News inner join News on News.n_id where ns_content = '{get_content.ns_content}'"
     return render(req, 'home.html', {'ns': ns})
+
+def banner3(req):
+    nm = N_summarization.objects.all()[:1]
+    return render(req, 'banner3.html', {'nm': nm})
