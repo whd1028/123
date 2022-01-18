@@ -1,6 +1,9 @@
 import os
+from winreg import QueryInfoKey
 from django.shortcuts import render
 from .models import *
+from rest_framework import viewsets
+from .serializers import TodoSerializers, NewsSerializers
 # from rest_framework.response import Response
 # from rest_framework import status
 # from rest_framework.decorators import api_view
@@ -126,3 +129,11 @@ def NSummarization(req):
 def banner3(req):
     nm = N_summarization.objects.all()[:1]
     return render(req, 'banner3.html', {'nm': nm})
+
+class TodoView(viewsets.ModelViewSet):
+    queryset = N_summarization.objects.all()[:1]
+    serializer_class = TodoSerializers
+
+class NewsView(viewsets.ModelViewSet):
+    queryset = News.objects.all()[:1]
+    serializer_class = NewsSerializers
