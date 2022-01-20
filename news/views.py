@@ -10,7 +10,6 @@ def index(req):
     raw = f"select ns_id, ns_content from N_summarization where ns_id = 3"
     NC = N_summarization.objects.raw(raw)
     ns = NC[0].ns_content
-
     return render(req, "index.html", {'banner': ns})
 
 def index1(req):
