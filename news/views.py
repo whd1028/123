@@ -2,17 +2,45 @@ from django.shortcuts import render
 from .models import *
 from django.contrib import messages
 from django.db.models import Q
+#from django.views.generic import View
 
 
 # Create your views here.
 def index(req):
-    # post_latest = Post.objects.order_by("-createDate")[:6]
+    raw = f"select ns_id, ns_content from N_summarization where ns_id = 3"
+    NC = N_summarization.objects.raw(raw)
+    ns = NC[0].ns_content
+
+    return render(req, "index.html", {'banner': ns})
+
+def index1(req):
     context = {
         # "post_latest": post_latest
     }
 
-    return render(req, "index.html", context=context)
+    return render(req, "index1.html", context=context)
 
+
+# def i_sum(req):
+#     raw = f"select ns_id, ns_content from N_summarization where ns_id = 9"
+#     NC = N_summarization.objects.raw(raw)
+#     ns = NC[0].ns_content
+
+#     return render(req, "index.html", {'i_sum': ns})
+
+# def i_sum2(req):
+#     raw = f"select ns_id, ns_content from N_summarization where ns_id = 5"
+#     NC = N_summarization.objects.raw(raw)
+#     ns = NC[0].ns_content
+
+#     return render(req, "index.html", {'i_sum2': ns})
+
+# def i_sum3(req):
+#     raw = f"select ns_id, ns_content from N_summarization where ns_id = 7"
+#     NC = N_summarization.objects.raw(raw)
+#     ns = NC[0].ns_content
+
+#     return render(req, "index.html", {'i_sum3': ns})        
 
 def author(req):
     # post_latest = Post.objects.order_by("-createDate")[:6]
@@ -85,24 +113,35 @@ def travel(req):
 
     return render(req, "travel.html", context=context)
 
-
-def travel1(req):
+def news_post(req):
     # post_latest = Post.objects.order_by("-createDate")[:6]
     context = {
         # "post_latest": post_latest
     }
 
-    return render(req, "travel1.html", context=context)
+    return render(req, "news_post.html", context=context)
 
-
-def NCategory(req):
-
-    n = 3
-    get_title = News.objects.get(n_id=n)
-    title = "계룡시, 시민과 함께한 2020년 해맞이행사 성료"
-    raw = f"select nc_id, n_content from N_content inner join News on N_content.n_id = News.n_id  where n_title = '{get_title.n_title}'"
+def banner1(req):
+    raw = f"select nc_id, n_content from N_content where nc_id = 1"
     NC = N_content.objects.raw(raw)
-    nn = NC[0].n_content
+    ns = NC[0].n_content
+    return render(req, 'banner1.html', {'banner1': ns})
 
-    return render(req, "travel1.html", {"NCategory": nn})
+def banner2(req):
+    raw = f"select nc_id, n_content from N_content where nc_id = 9"
+    NC = N_content.objects.raw(raw)
+    ns = NC[0].n_content
+    return render(req, 'banner2.html', {'banner2': ns})
 
+
+def banner3(req):
+    raw = f"select nc_id, n_content from N_content where nc_id = 5"
+    NC = N_content.objects.raw(raw)
+    ns = NC[0].n_content
+    return render(req, 'banner3.html', {'banner3': ns})
+
+def banner4(req):
+    raw = f"select nc_id, n_content from N_content where nc_id = 7"
+    NC = N_content.objects.raw(raw)
+    ns = NC[0].n_content
+    return render(req, 'banner4.html', {'banner4': ns})

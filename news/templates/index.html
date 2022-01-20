@@ -51,6 +51,7 @@
       }
     </script>
   </head>
+
   <body onload="showClock()">
     <div class="container-scroller">
       <div class="main-panel">
@@ -169,70 +170,79 @@
               <div class="d-flex justify-content-between  mb-3 mb-lg-0">
                 <div>
                   <img
-                    src="{% static 'images/dashboard/star-magazine-1.jpg' %}"
+                    src="https://www.pressian.com/data/photos/cdn/20200101/art_1577888137.jpg"
                     alt="thumb"
                     class="banner-top-thumb"
                   />
                 </div>
                 <h5 class="m-0 font-weight-bold">
-                  The morning after: What people
+                  <a href = "http://www.pressian.com/news/article.html?no=272249&utm_source=naver&utm_medium=search">허성무 시장,  ‘2020 대도약, 대혁신 해’ 맞이</a>
                 </h5>
               </div>
               <div class="d-flex justify-content-between mb-3 mb-lg-0">
                 <div>
                   <img
-                    src="{% static 'images/dashboard/star-magazine-2.jpg' %}"
-                    alt="thumb"
-                    class="banner-top-thumb"
-                  />
-                </div>
-                <h5 class="m-0 font-weight-bold">How Hungary produced the</h5>
-              </div>
-              <div class="d-flex justify-content-between mb-3 mb-lg-0">
-                <div>
-                  <img
-                    src="{%  static 'images/dashboard/star-magazine-3.jpg' %}"
+                    src="https://imgnews.pstatic.net/image/081/2020/01/01/0003055482_001_20200101231103172.jpg?type=w647"
                     alt="thumb"
                     class="banner-top-thumb"
                   />
                 </div>
                 <h5 class="m-0 font-weight-bold">
-                  A sleepy island paradise's most
+                  <a href="https://www.seoul.co.kr/news/newsView.php?id=20200101500064&wlog_tag3=naver">
+                  “폐암 의심 진단” 양승태 전 대법원장, 폐 수술 이유로 재판 연기
+                  </a>
                 </h5>
               </div>
               <div class="d-flex justify-content-between mb-3 mb-lg-0">
                 <div>
                   <img
-                    src="{% static 'images/dashboard/star-magazine-4.jpg' %}"
+                    src="https://imgnews.pstatic.net/image/469/2020/01/01/0000453661_001_20200102044608986.jpg?type=w647"
                     alt="thumb"
                     class="banner-top-thumb"
                   />
                 </div>
                 <h5 class="m-0 font-weight-bold">
-                  America's most popular national
+                  <a href="http://www.hankookilbo.com/news/npath/202001012227378106?did=NA">
+                  ‘마이웨이’ 이정희 “스폰서 제의 수백 번 받아…힘들어 미국으로 도망”
+                  </a>
+                </h5>
+              </div>
+              <div class="d-flex justify-content-between mb-3 mb-lg-0">
+                <div>
+                  <img
+                    src="https://imgnews.pstatic.net/image/014/2020/01/01/0004351400_001_20200101224901896.jpg?type=w647"
+                    alt="thumb"
+                    class="banner-top-thumb"
+                  />
+                </div>
+                <h5 class="m-0 font-weight-bold">
+                  <a href="http://www.fnnews.com/news/202001012244533282">
+                  고양시 “2020년 지상명령, 기업 살리기”
+                  </a>
                 </h5>
               </div>
             </div>
           </div>
+
           <div class="owl-carousel owl-theme" id="main-banner-carousel">
             <div class="item">
               <div class="carousel-content-wrapper mb-2">
                 <div class="carousel-content">
                   <h1 class="font-weight-bold">
-                    <a class="nav-link" href="{% url 'NCategory' %}">If you wanted to get rich, how would you do it?</a>
+                    <a class="nav-link" href="{% url 'banner1' %}" >진중권 “오픈북? 그렇다고 부모가 보진 않아” 유시민 “모든 정보, 검찰의 주장”</a>
                   </h1>
                   <h5 class="font-weight-normal  m-0">
-                    Lorem Ipsum has been the industry's standard
+                    <p style="color:black;">{{ banner }}</p>
                   </h5>
-                  <p class="text-color m-0 pt-2 d-flex align-items-center">
+                  <!-- <p class="text-color m-0 pt-2 d-flex align-items-center">
                     <span class="fs-10 mr-1">2 hours ago</span>
                     <i class="mdi mdi-bookmark-outline mr-3"></i>
                     <span class="fs-10 mr-1">126</span>
                     <i class="mdi mdi-comment-outline"></i>
-                  </p>
+                  </p> -->
                 </div>
                 <div class="carousel-image">
-                  <img src="https://imgnews.pstatic.net/image/003/2022/01/11/NISI20220111_0000911354_web_20220111144456_20220111145409231.jpg?type=w647">
+                  <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202001/02/b005b352-279a-4fa7-9a1c-7c07353fc3d2.jpg">
                 </div>
               </div>
             </div>
@@ -240,20 +250,21 @@
               <div class="carousel-content-wrapper mb-2">
                 <div class="carousel-content">
                   <h1 class="font-weight-bold">
-                    If you wanted to get rich, how would you do it?
+                    <a class="nav-link" href="{% url 'banner2' %}" line-height:length>강원, 새해 첫날부터 산불·추락사 등 사건사고 잇따라</a>
                   </h1>
                   <h5 class="font-weight-normal  m-0">
-                    Lorem Ipsum has been the industry's standard
+                    <p style="color:black;">{{ banner }}</p>
+                    <!-- <p style="color:black;">{{ i_sum }}</p> -->
                   </h5>
                   <p class="text-color m-0 pt-2 d-flex align-items-center">
-                    <span class="fs-10 mr-1">2 hours ago</span>
+                    <!-- <span class="fs-10 mr-1">2 hours ago</span>
                     <i class="mdi mdi-bookmark-outline mr-3"></i>
                     <span class="fs-10 mr-1">126</span>
-                    <i class="mdi mdi-comment-outline"></i>
+                    <i class="mdi mdi-comment-outline"></i> -->
                   </p>
                 </div>
                 <div class="carousel-image">
-                  <img src="https://imgnews.pstatic.net/image/009/2022/01/12/0004907978_001_20220113160901049.jpg?type=w647">
+                  <img src="https://imgnews.pstatic.net/image/003/2020/01/01/NISI20200101_0000455879_web_20200101231840_20200101232403833.jpg?type=w647" width="1000">
                 </div>
               </div>
             </div>
@@ -261,20 +272,21 @@
               <div class="carousel-content-wrapper mb-2">
                 <div class="carousel-content">
                   <h1 class="font-weight-bold">
-                    If you wanted to get rich, how would you do it?
+                    <a class="nav-link" href="{% url 'banner3' %}">‘창원 짚트랙’ 개장 70여일 만에 1만명 다녀가</a>
                   </h1>
-                  <h5 class="font-weight-normal  m-0">
-                    Lorem Ipsum has been the industry's standard
+                  <h5>
+                    <p style="color:black;">{{ banner }}</p>
+                    <!-- <p style="color:black;">{{ isum2 }}</p> -->
                   </h5>
-                  <p class="text-color m-0 pt-2 d-flex align-items-center">
+                  <!-- <p class="text-color m-0 pt-2 d-flex align-items-center">
                     <span class="fs-10 mr-1">2 hours ago</span>
                     <i class="mdi mdi-bookmark-outline mr-3"></i>
                     <span class="fs-10 mr-1">126</span>
                     <i class="mdi mdi-comment-outline"></i>
-                  </p>
+                  </p> -->
                 </div>
                 <div class="carousel-image">
-                  <img src="https://imgnews.pstatic.net/image/014/2022/01/13/0004771723_001_20220113134504032.jpg?type=w647">
+                  <img src="https://www.pressian.com/data/photos/cdn/20200101/art_1577888642.jpg" width="2000">
                 </div>
               </div>
             </div>
@@ -282,24 +294,20 @@
               <div class="carousel-content-wrapper mb-2">
                 <div class="carousel-content">
                   <h1 class="font-weight-bold">
-                    If you wanted to get rich, how would you do it?
+                    <a class="nav-link" href="{% url 'banner4' %}">계룡시, 시민과 함께한 2020년 해맞이행사 성료</a>
                   </h1>
                   <h5 class="font-weight-normal  m-0">
-                    Lorem Ipsum has been the industry's standard
+                    <p style="color:black;">{{ banner }}</p>
+                    <!-- <p style="color:black;">{{ i_sum3 }}</p> -->
                   </h5>
-                  <p class="text-color m-0 pt-2 d-flex align-items-center">
-                    <span class="fs-10 mr-1">2 hours ago</span>
-                    <i class="mdi mdi-bookmark-outline mr-3"></i>
-                    <span class="fs-10 mr-1">126</span>
-                    <i class="mdi mdi-comment-outline"></i>
-                  </p>
                 </div>
                 <div class="carousel-image">
-                  <img src="https://imgnews.pstatic.net/image/023/2022/01/13/0003665920_001_20220113030209697.jpg?type=w647" alt="" />
+                  <img src="http://image.sportsseoul.com/2020/01/01/news/2020010101000104000004001.jpg" width="2000" />
                 </div>
               </div>
             </div>
           </div>
+
           <div class="world-news">
             <div class="row">
               <div class="col-sm-12">
@@ -324,7 +332,7 @@
                 <p class="fs-15 font-weight-normal">
                   Lorem Ipsum has been the industry's standard dummy text
                 </p>
-                <a href="#" class="font-weight-bold text-dark pt-2"
+                <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2"
                   >Read Article</a
                 >
               </div>
@@ -343,7 +351,7 @@
                 <p class="fs-15 font-weight-normal">
                   Lorem Ipsum has been the industry's standard dummy text
                 </p>
-                <a href="#" class="font-weight-bold text-dark pt-2"
+                <a href="{% url 'news_post' %}" class="font-weight-bold text-dark pt-2"
                   >Read Article</a
                 >
               </div>
@@ -362,7 +370,7 @@
                 <p class="fs-15 font-weight-normal">
                   Lorem Ipsum has been the industry's standard dummy text
                 </p>
-                <a href="#" class="font-weight-bold text-dark pt-2"
+                <a href="{% url 'art' %}" class="font-weight-bold text-dark pt-2"
                   >Read Article</a
                 >
               </div>
@@ -381,7 +389,7 @@
                 <p class="fs-15 font-weight-normal">
                   Lorem Ipsum has been the industry's standard dummy text
                 </p>
-                <a href="#" class="font-weight-bold text-dark pt-2"
+                <a href="{% url 'business' %}" class="font-weight-bold text-dark pt-2"
                   >Read Article</a
                 >
               </div>
