@@ -10,21 +10,21 @@
     <!-- plugin css for this page -->
     <link
       rel="stylesheet"
-      href="{% static 'vendors/mdi/css/materialdesignicons.min.css' %}"
+      href="{% static 'assets/vendors/mdi/css/materialdesignicons.min.css' %}"
     />
-    <link rel="stylesheet" href="{% static 'vendors/aos/dist/aos.css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/vendors/aos/dist/aos.css/aos.css' %}" />
     <link
       rel="stylesheet"
-      href="{% static 'vendors/owl.carousel/dist/assets/owl.carousel.min.css' %}"
+      href="{% static 'assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css' %}"
     />
     <link
       rel="stylesheet"
-      href="{% static 'vendors/owl.carousel/dist/assets/owl.theme.default.min.css' %}"
+      href="{% static 'assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css' %}"
     />
     <!-- End plugin css for this page -->
-    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" />
     <!-- inject:css -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <!-- endinject -->
     <script type="text/javascript">
       function showClock(){
@@ -65,7 +65,7 @@
                 </ul>
                 <div>
                   <a class="navbar-brand" href="{% url 'index' %}"
-                    ><img src="{% static 'images/logo.svg' %}" alt=""
+                    ><img src="{% static 'assets/images/logo.svg' %}" alt=""
                   /></a>
                 </div>
                 <div class="d-flex">
@@ -196,118 +196,217 @@
               <div class="d-flex justify-content-between mb-3 mb-lg-0">
                 <div>
                   <img
-                    src="https://imgnews.pstatic.net/image/469/2020/01/01/0000453661_001_20200102044608986.jpg?type=w647"
+                    src="https://imgnews.pstatic.net/image/421/2020/01/01/0004387249_001_20200101221407396.jpg?type=w647"
                     alt="thumb"
                     class="banner-top-thumb"
                   />
                 </div>
                 <h5 class="m-0 font-weight-bold">
-                  <a href="http://www.hankookilbo.com/news/npath/202001012227378106?did=NA">
-                  ‘마이웨이’ 이정희 “스폰서 제의 수백 번 받아…힘들어 미국으로 도망”
+                  <a href="http://news1.kr/articles/?3806678">
+                    금은방 두 곳서 1천만원대 목걸이 훔친 중학생 덜미
                   </a>
                 </h5>
               </div>
               <div class="d-flex justify-content-between mb-3 mb-lg-0">
                 <div>
                   <img
-                    src="https://imgnews.pstatic.net/image/014/2020/01/01/0004351400_001_20200101224901896.jpg?type=w647"
+                    src="https://imgnews.pstatic.net/image/023/2020/01/01/2020010101695_0_20200101220702189.jpg?type=w647"
                     alt="thumb"
                     class="banner-top-thumb"
                   />
                 </div>
                 <h5 class="m-0 font-weight-bold">
-                  <a href="http://www.fnnews.com/news/202001012244533282">
-                  고양시 “2020년 지상명령, 기업 살리기”
+                  <a href="https://news.chosun.com/site/data/html_dir/2020/01/01/2020010101698.html?utm_source=naver&utm_medium=original&utm_campaign=news">
+                    전주 ‘얼굴 없는 천사’ 성금 6000만원 훔친 2명 구속
                   </a>
                 </h5>
               </div>
             </div>
           </div>
-
-          <div class="owl-carousel owl-theme" id="main-banner-carousel">
-            <div class="item">
-              <div class="carousel-content-wrapper mb-2">
-                <div class="carousel-content">
-                  <h1 class="font-weight-bold">
-                    <a class="nav-link" href="{% url 'banner1' %}" >진중권 “오픈북? 그렇다고 부모가 보진 않아” 유시민 “모든 정보, 검찰의 주장”</a>
-                  </h1>
-                  <h5 class="font-weight-normal  m-0">
-                    <p style="color:black;">{{ banner }}</p>
-                  </h5>
-                  <!-- <p class="text-color m-0 pt-2 d-flex align-items-center">
-                    <span class="fs-10 mr-1">2 hours ago</span>
-                    <i class="mdi mdi-bookmark-outline mr-3"></i>
-                    <span class="fs-10 mr-1">126</span>
-                    <i class="mdi mdi-comment-outline"></i>
-                  </p> -->
+          <!--- 배너  --->
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="owl-carousel owl-theme" id="main-banner-carousel">
+                <div class="item">
+                  <div class="carousel-content-wrapper mb-2">
+                    <div class="carousel-content">
+                      <h1 class="font-weight-bold">
+                        <a class="nav-link" href="{% url 'banner1' %}" >진중권 “오픈북? 그렇다고 부모가 보진 않아” 유시민 “모든 정보, 검찰의 주장”</a>
+                      </h1>
+                      <h5 class="font-weight-normal  m-0">
+                        <p style="color:black;">{{ banner }}</p>
+                      </h5>
+                      <p class="text-color m-0 pt-2 d-flex align-items-center">
+                        <span class="fs-10 mr-1">2 hours ago</span>
+                        <i class="mdi mdi-bookmark-outline mr-3"></i>
+                        <span class="fs-10 mr-1">126</span>
+                        <i class="mdi mdi-comment-outline"></i>
+                      </p>
+                    </div>
+                    <div class="carousel-image">
+                      <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202001/02/b005b352-279a-4fa7-9a1c-7c07353fc3d2.jpg" alt="" />
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202001/02/b005b352-279a-4fa7-9a1c-7c07353fc3d2.jpg">
+                <div class="item">
+                  <div class="carousel-content-wrapper mb-2">
+                    <div class="carousel-content">
+                      <h1 class="font-weight-bold">
+                        <a class="nav-link" href="{% url 'banner2' %}">강원, 새해 첫날부터 산불·추락사 등 사건사고 잇따라</a>
+                      </h1>
+                      <h5 class="font-weight-normal  m-0">
+                        <p style="color:black;">{{ banner }}</p>
+                      </h5>
+                      <p class="text-color m-0 pt-2 d-flex align-items-center">
+                        <span class="fs-10 mr-1">2 hours ago</span>
+                        <i class="mdi mdi-bookmark-outline mr-3"></i>
+                        <span class="fs-10 mr-1">126</span>
+                        <i class="mdi mdi-comment-outline"></i>
+                      </p>
+                    </div>
+                    <div class="carousel-image">
+                      <img src="https://imgnews.pstatic.net/image/003/2020/01/01/NISI20200101_0000455879_web_20200101231840_20200101232403833.jpg?type=w647" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel-content-wrapper mb-2">
+                    <div class="carousel-content">
+                      <h1 class="font-weight-bold">
+                        <a class="nav-link" href="{% url 'banner3' %}">부산 사하구 신평동 강변대로서 4중 추돌…2명 부상</a>
+                      </h1>
+                      <h5 class="font-weight-normal  m-0">
+                        <p style="color:black;">{{ banner }}</p>
+                      </h5>
+                      <p class="text-color m-0 pt-2 d-flex align-items-center">
+                        <span class="fs-10 mr-1">2 hours ago</span>
+                        <i class="mdi mdi-bookmark-outline mr-3"></i>
+                        <span class="fs-10 mr-1">126</span>
+                        <i class="mdi mdi-comment-outline"></i>
+                      </p>
+                    </div>
+                    <div class="carousel-image">
+                      <img src="https://imgnews.pstatic.net/image/214/2020/01/01/0001004439_001_20200101221504575.jpg?type=w647" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel-content-wrapper mb-2">
+                    <div class="carousel-content">
+                      <h1 class="font-weight-bold">
+                        <a class="nav-link" href="{% url 'banner4' %}">동해해경청, 새해첫날 독도 해상서 조업중 50대 뇌출혈 환자 긴급 이송</a>
+                      </h1>
+                      <h5 class="font-weight-normal  m-0">
+                        <p style="color:black;">{{ banner }}</p>
+                      </h5>
+                      <p class="text-color m-0 pt-2 d-flex align-items-center">
+                        <span class="fs-10 mr-1">2 hours ago</span>
+                        <i class="mdi mdi-bookmark-outline mr-3"></i>
+                        <span class="fs-10 mr-1">126</span>
+                        <i class="mdi mdi-comment-outline"></i>
+                      </p>
+                    </div>
+                    <div class="carousel-image">
+                      <img src="https://imgnews.pstatic.net/image/016/2020/01/01/202001012143004648513_20200101215104_01_20200101215301629.jpg?type=w647" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="carousel-content-wrapper mb-2">
-                <div class="carousel-content">
-                  <h1 class="font-weight-bold">
-                    <a class="nav-link" href="{% url 'banner2' %}" line-height:length>강원, 새해 첫날부터 산불·추락사 등 사건사고 잇따라</a>
-                  </h1>
-                  <h5 class="font-weight-normal  m-0">
-                    <p style="color:black;">{{ banner }}</p>
-                    <!-- <p style="color:black;">{{ i_sum }}</p> -->
-                  </h5>
-                  <p class="text-color m-0 pt-2 d-flex align-items-center">
-                    <!-- <span class="fs-10 mr-1">2 hours ago</span>
-                    <i class="mdi mdi-bookmark-outline mr-3"></i>
-                    <span class="fs-10 mr-1">126</span>
-                    <i class="mdi mdi-comment-outline"></i> -->
-                  </p>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="py-3 border-bottom">
+                    <div class="d-flex align-items-center pb-2">
+                      <!-- <img
+                        src="{% static 'assets/images/dashboard/Profile_1.jpg' %}"
+                        class="img-xs img-rounded mr-2"
+                        alt="thumb"
+                      /> -->
+                      <span class="fs-12 text-muted">황성호</span>
+                    </div>
+                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
+                      <a href="http://www.donga.com/news/article/all/20200101/99047125/1">
+                        “납득할 수 없다”…檢, ‘선거 개입 의혹’ 송병기 영장 기각에 반발
+                      </a>
+                    </p>
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img src="https://imgnews.pstatic.net/image/003/2020/01/01/NISI20200101_0000455879_web_20200101231840_20200101232403833.jpg?type=w647" width="1000">
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="carousel-content-wrapper mb-2">
-                <div class="carousel-content">
-                  <h1 class="font-weight-bold">
-                    <a class="nav-link" href="{% url 'banner3' %}">‘창원 짚트랙’ 개장 70여일 만에 1만명 다녀가</a>
-                  </h1>
-                  <h5>
-                    <p style="color:black;">{{ banner }}</p>
-                    <!-- <p style="color:black;">{{ isum2 }}</p> -->
-                  </h5>
-                  <!-- <p class="text-color m-0 pt-2 d-flex align-items-center">
-                    <span class="fs-10 mr-1">2 hours ago</span>
-                    <i class="mdi mdi-bookmark-outline mr-3"></i>
-                    <span class="fs-10 mr-1">126</span>
-                    <i class="mdi mdi-comment-outline"></i>
-                  </p> -->
-                </div>
-                <div class="carousel-image">
-                  <img src="https://www.pressian.com/data/photos/cdn/20200101/art_1577888642.jpg" width="2000">
+                <div class="col-sm-6">
+                  <div class="py-3 border-bottom">
+                    <div class="d-flex align-items-center pb-2">
+                      <!-- <img
+                        src="{% static 'assets/images/dashboard/Profile_2.jpg' %}"
+                        class="img-xs img-rounded mr-2"
+                        alt="thumb"
+                      /> -->
+                      <span class="fs-12 text-muted">박종일</span>
+                    </div>
+                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
+                      <a href="https://view.asiae.co.kr/article/2020010121345036225">
+                        서대문구, 부동산중개사무소 개설(이전) 등록 원스톱으로!
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="carousel-content-wrapper mb-2">
-                <div class="carousel-content">
-                  <h1 class="font-weight-bold">
-                    <a class="nav-link" href="{% url 'banner4' %}">계룡시, 시민과 함께한 2020년 해맞이행사 성료</a>
-                  </h1>
-                  <h5 class="font-weight-normal  m-0">
-                    <p style="color:black;">{{ banner }}</p>
-                    <!-- <p style="color:black;">{{ i_sum3 }}</p> -->
-                  </h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="pt-4 pb-4 border-bottom">
+                    <div class="d-flex align-items-center pb-2">
+                      <span class="fs-12 text-muted">박종일</span>
+                    </div>
+                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
+                      <a href="https://view.asiae.co.kr/article/2020010121272925933">
+                        2020년 예산 1조162억...강남구 민선 7기 무엇이 바뀌었나?
+                      </a> 
+                      
+                    </p>
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img src="http://image.sportsseoul.com/2020/01/01/news/2020010101000104000004001.jpg" width="2000" />
+                <div class="col-sm-6">
+                  <div class="pt-3 pb-4 border-bottom">
+                    <div class="d-flex align-items-center pb-2">
+                      <span class="fs-12 text-muted">임성재</span>
+                    </div>
+                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
+                    <a href="http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4023452">
+                      악기 케이스에 몸 숨겨…카를로스 곤 전 닛산 회장의 일본 탈출극
+                    </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="pt-4 pb-4">
+                    <div class="d-flex align-items-center pb-2">
+                      <span class="fs-12 text-muted">홍진환</span>
+                    </div>
+                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
+                      <a href="http://www.donga.com/news/article/all/20200101/99045196/1">
+                        휴일 한 컷 새해 첫날, 윷놀이 즐기는 외국인들
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="pt-3 pb-4">
+                    <div class="d-flex align-items-center pb-2">
+                      <span class="fs-12 text-muted">김명일</span>
+                    </div>
+                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
+                      <a href="https://www.chosun.com/national/national_general/2022/01/14/YWP36CEWGZEIJO7D433DD5H6D4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news">
+                        “800억 벌었는데 후배에 밥 안사” 주장에…비 “법적조치, 선처 절대 없다”
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
+      
+          <!-- 월드 뉴스 -->
           <div class="world-news">
             <div class="row">
               <div class="col-sm-12">
@@ -358,7 +457,7 @@
               <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
                 <div class="position-relative image-hover">
                   <img
-                    src="{% static 'images/dashboard/art.jpg' %}"
+                    src="{% static 'assets/images/dashboard/art.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -377,7 +476,7 @@
               <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
                 <div class="position-relative image-hover">
                   <img
-                    src="{% static 'images/dashboard/business.jpg' %}"
+                    src="{% static 'assets/images/dashboard/business.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -407,7 +506,7 @@
               <div class="col-lg-6  mb-5 mb-sm-2">
                 <div class="position-relative image-hover">
                   <img
-                    src="{% static 'images/dashboard/glob.jpg' %}"
+                    src="{% static 'assets/images/dashboard/glob.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -427,7 +526,7 @@
                   <div class="col-sm-6  mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-5.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-5.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -443,7 +542,7 @@
                   <div class="col-sm-6  mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-6.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-6.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -461,7 +560,7 @@
                   <div class="col-sm-6  mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-7.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-7.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -477,7 +576,7 @@
                   <div class="col-sm-6">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-8.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-8.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -508,7 +607,7 @@
                   <div class="col-sm-4  mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-9.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-9.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -521,7 +620,7 @@
                   <div class="col-sm-4 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-10.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-10.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -534,7 +633,7 @@
                   <div class="col-sm-4 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-11.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-11.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -549,7 +648,7 @@
                   <div class="col-sm-4 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-12.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-12.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -562,7 +661,7 @@
                   <div class="col-sm-4 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-13.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-13.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -575,7 +674,7 @@
                   <div class="col-sm-4 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'images/dashboard/star-magazine-14.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-14.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
@@ -590,7 +689,7 @@
               <div class="col-lg-3">
                 <div class="position-relative mb-3">
                   <img
-                    src="{% static 'images/dashboard/star-magazine-15.jpg' %}"
+                    src="{% static 'assets/images/dashboard/star-magazine-15.jpg' %}"
                     class="img-fluid"
                     alt="world-news"
                   />
@@ -717,7 +816,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="d-flex justify-content-between">
-                  <img src="{% static 'images/logo.svg' %}" class="footer-logo" alt="" />
+                  <img src="{% static 'assets/images/logo.svg' %}" class="footer-logo" alt="" />
 
                   <div class="d-flex justify-content-end footer-social">
                     <h5 class="m-0 font-weight-600 mr-3 d-none d-lg-flex">Follow on</h5>
@@ -781,13 +880,13 @@
       <a href="#header"><img src="{% static 'images/mouse.png' %}" title="맨 위로"></a>
     </div>
     <!-- inject:js -->
-    <script src="{% static 'vendors/js/vendor.bundle.base.js' %}"></script>
+    <script src="{% static 'assets/vendors/js/vendor.bundle.base.js' %}"></script>
     <!-- endinject -->
     <!-- plugin js for this page -->
-    <script src="{% static 'vendors/owl.carousel/dist/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/owl.carousel/dist/owl.carousel.min.js' %}"></script>
     <!-- End plugin js for this page -->
     <!-- Custom js for this page-->
-    <script src="{% static 'js/demo.js' %}"></script>
+    <script src="{% static 'assets/js/demo.js' %}"></script>
     <!-- End custom js for this page-->
   </body>
 </html>
