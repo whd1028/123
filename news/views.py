@@ -4,12 +4,26 @@ from django.contrib import messages
 from django.db.models import Q
 #from django.views.generic import View
 
+# -2022.01.24 park_jong_won
+import logging
+logger = logging.getLogger('news')
+
 
 # Create your views here.
 def index(req):
     raw = f"select ns_id, ns_content from N_summarization where ns_id = 3"
     NC = N_summarization.objects.raw(raw)
     ns = NC[0].ns_content
+
+    if req.method == 'POST':
+        # form = TestForm(req.POST)
+        form = req.POST
+        
+        logger.info(f"index POST log test => [scroll = {form['scroll']}, deltaTime = {form['deltaTime']}]")
+        # logger.info(f"index POST log test")
+    else:
+        logger.info("index GET log test")
+
     return render(req, "index.html", {'banner': ns})
 
 def index1(req):

@@ -888,5 +888,35 @@
     <!-- Custom js for this page-->
     <script src="{% static 'assets/js/demo.js' %}"></script>
     <!-- End custom js for this page-->
+
+    <!--- scroll log -park- -->
+    <script>
+      // var request = new XMLHttpRequest();
+      var start = Date.now();
+      window.addEventListener('scroll', function(){
+        let delta = Date.now() - start;
+      
+        if (delta >= 3000){ //3초
+          $.ajax({
+            url: '/news/',
+            type:'POST',
+            dataType: 'JSON',
+            data:{
+              'scroll': window.scrollY,
+              'deltaTime': dalta,
+              csrfmiddlewaretoken: '{{ csrf_token }}'
+            },
+            headers: { 'X-CSRFToken': '{{ csrf_token }}'},
+            succes: function(){
+              alert("성공")
+            },
+            // error: function(xhr, textStatus, thrownError){
+            //   alert("Could not send URL to Django. Error: " + xhr.status + ": " + xhr.responseText);
+            // }
+
+          })
+        }
+      })
+    </script>
   </body>
 </html>
