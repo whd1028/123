@@ -173,7 +173,7 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #EFF2FB;
   text-decoration: none;
   background-color: transparent;
 }
@@ -497,6 +497,11 @@ mark,
   height: 100%;
 }
 
+.img-fluid1 {
+  width: 260px;
+  height: 230px;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -627,7 +632,7 @@ pre code {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -1241,8 +1246,8 @@ pre code {
     max-width: 25%;
   }
   .col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    flex: 0 0 10.33333%;
+    max-width: 10.33333%;
   }
   .col-lg-5 {
     flex: 0 0 41.66667%;
@@ -1262,7 +1267,7 @@ pre code {
   }
   .col-lg-9 {
     flex: 0 0 75%;
-    max-width: 75%;
+    max-width: 100%;
   }
   .col-lg-10 {
     flex: 0 0 83.33333%;
@@ -9753,7 +9758,7 @@ p {
 }
 
 h1, .h1 {
-  font-size: 32px;
+  font-size: 23px;
 }
 
 h2, .h2 {
@@ -10366,8 +10371,8 @@ h6, .h6 {
 
 .banner-top-thumb-wrap {
   padding: 22px 0;
-  border-bottom: 1px solid #dbdbdb;
-  margin-bottom: 50px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
 }
 
 .banner-top-thumb {
@@ -10377,8 +10382,8 @@ h6, .h6 {
 }
 
 .carousel-image {
-    width: 600px;
-    height: 340px;
+    width: 1140px;
+    height: 400px;
 }
 
 .fs-10 {
@@ -10432,7 +10437,7 @@ h6, .h6 {
     bottom: 12px;
   }
   #main-banner-carousel .carousel-content-wrapper .carousel-content h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
   #main-banner-carousel .carousel-content-wrapper .carousel-content h5 {
     font-size: 14px;
@@ -10449,7 +10454,7 @@ h6, .h6 {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 @media (max-width: 1024px) {
@@ -10499,7 +10504,7 @@ h6, .h6 {
 
 .world-news,
 .popular-news {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .font-weight-600 {

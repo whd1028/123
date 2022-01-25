@@ -70,12 +70,6 @@
                 </div>
                 <div class="d-flex">
                   <ul class="navbar-right">
-                    <li>
-                      <a href="{% url 'index' %}">한국어</a>
-                    </li>
-                    <li>
-                      <a href="{% url 'index' %}">ENGLISH</a>
-                    </li>
                   </ul>
                   <ul class="social-media">
                     <li>
@@ -140,16 +134,16 @@
                       <a class="nav-link" href="{% url 'politics' %}">정치</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'post' %}">사회</a>
+                      <a class="nav-link" href="{% url 'post' %}">경제</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'business' %}">경제</a>
+                      <a class="nav-link" href="{% url 'business' %}">사회</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'sports' %}">스포츠</a>
+                      <a class="nav-link" href="{% url 'sports' %}">생활/문화</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'art' %}">미술</a>
+                      <a class="nav-link" href="{% url 'art' %}">IT/과학</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'world' %}">세계</a>
@@ -166,66 +160,66 @@
         </header>
         <div class="container">
           <div class="banner-top-thumb-wrap">
-            <div class="d-lg-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between  mb-3 mb-lg-0">
-                <div>
-                  <img
-                    src="https://www.pressian.com/data/photos/cdn/20200101/art_1577888137.jpg"
-                    alt="thumb"
-                    class="banner-top-thumb"
-                  />
-                </div>
-                <h5 class="m-0 font-weight-bold">
-                  <a href = "http://www.pressian.com/news/article.html?no=272249&utm_source=naver&utm_medium=search">허성무 시장,  ‘2020 대도약, 대혁신 해’ 맞이</a>
-                </h5>
-              </div>
-              <div class="d-flex justify-content-between mb-3 mb-lg-0">
-                <div>
-                  <img
-                    src="https://imgnews.pstatic.net/image/081/2020/01/01/0003055482_001_20200101231103172.jpg?type=w647"
-                    alt="thumb"
-                    class="banner-top-thumb"
-                  />
-                </div>
-                <h5 class="m-0 font-weight-bold">
-                  <a href="https://www.seoul.co.kr/news/newsView.php?id=20200101500064&wlog_tag3=naver">
-                  “폐암 의심 진단” 양승태 전 대법원장, 폐 수술 이유로 재판 연기
-                  </a>
-                </h5>
-              </div>
-              <div class="d-flex justify-content-between mb-3 mb-lg-0">
-                <div>
-                  <img
-                    src="https://imgnews.pstatic.net/image/421/2020/01/01/0004387249_001_20200101221407396.jpg?type=w647"
-                    alt="thumb"
-                    class="banner-top-thumb"
-                  />
-                </div>
-                <h5 class="m-0 font-weight-bold">
-                  <a href="http://news1.kr/articles/?3806678">
-                    금은방 두 곳서 1천만원대 목걸이 훔친 중학생 덜미
-                  </a>
-                </h5>
-              </div>
-              <div class="d-flex justify-content-between mb-3 mb-lg-0">
-                <div>
-                  <img
-                    src="https://imgnews.pstatic.net/image/023/2020/01/01/2020010101695_0_20200101220702189.jpg?type=w647"
-                    alt="thumb"
-                    class="banner-top-thumb"
-                  />
-                </div>
-                <h5 class="m-0 font-weight-bold">
-                  <a href="https://news.chosun.com/site/data/html_dir/2020/01/01/2020010101698.html?utm_source=naver&utm_medium=original&utm_campaign=news">
-                    전주 ‘얼굴 없는 천사’ 성금 6000만원 훔친 2명 구속
-                  </a>
-                </h5>
-              </div>
-            </div>
+<!--            <div class="d-lg-flex justify-content-between align-items-center">-->
+<!--              <div class="d-flex justify-content-between  mb-3 mb-lg-0">-->
+<!--                <div>-->
+<!--                  <img-->
+<!--                    src="https://www.pressian.com/data/photos/cdn/20200101/art_1577888137.jpg"-->
+<!--                    alt="thumb"-->
+<!--                    class="banner-top-thumb"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <h5 class="m-0 font-weight-bold">-->
+<!--                  <a href = "http://www.pressian.com/news/article.html?no=272249&utm_source=naver&utm_medium=search">허성무 시장,  ‘2020 대도약, 대혁신 해’ 맞이</a>-->
+<!--                </h5>-->
+<!--              </div>-->
+<!--              <div class="d-flex justify-content-between mb-3 mb-lg-0">-->
+<!--                <div>-->
+<!--                  <img-->
+<!--                    src="https://imgnews.pstatic.net/image/081/2020/01/01/0003055482_001_20200101231103172.jpg?type=w647"-->
+<!--                    alt="thumb"-->
+<!--                    class="banner-top-thumb"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <h5 class="m-0 font-weight-bold">-->
+<!--                  <a href="https://www.seoul.co.kr/news/newsView.php?id=20200101500064&wlog_tag3=naver">-->
+<!--                  “폐암 의심 진단” 양승태 전 대법원장, 폐 수술 이유로 재판 연기-->
+<!--                  </a>-->
+<!--                </h5>-->
+<!--              </div>-->
+<!--              <div class="d-flex justify-content-between mb-3 mb-lg-0">-->
+<!--                <div>-->
+<!--                  <img-->
+<!--                    src="https://imgnews.pstatic.net/image/421/2020/01/01/0004387249_001_20200101221407396.jpg?type=w647"-->
+<!--                    alt="thumb"-->
+<!--                    class="banner-top-thumb"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <h5 class="m-0 font-weight-bold">-->
+<!--                  <a href="http://news1.kr/articles/?3806678">-->
+<!--                    금은방 두 곳서 1천만원대 목걸이 훔친 중학생 덜미-->
+<!--                  </a>-->
+<!--                </h5>-->
+<!--              </div>-->
+<!--              <div class="d-flex justify-content-between mb-3 mb-lg-0">-->
+<!--                <div>-->
+<!--                  <img-->
+<!--                    src="https://imgnews.pstatic.net/image/023/2020/01/01/2020010101695_0_20200101220702189.jpg?type=w647"-->
+<!--                    alt="thumb"-->
+<!--                    class="banner-top-thumb"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <h5 class="m-0 font-weight-bold">-->
+<!--                  <a href="https://news.chosun.com/site/data/html_dir/2020/01/01/2020010101698.html?utm_source=naver&utm_medium=original&utm_campaign=news">-->
+<!--                    전주 ‘얼굴 없는 천사’ 성금 6000만원 훔친 2명 구속-->
+<!--                  </a>-->
+<!--                </h5>-->
+<!--              </div>-->
+<!--            </div>-->
           </div>
           <!--- 배너  --->
           <div class="row">
-            <div class="col-lg-8">
+<!--            <div class="col-lg-8">-->
               <div class="owl-carousel owl-theme" id="main-banner-carousel">
                 <div class="item">
                   <div class="carousel-content-wrapper mb-2">
@@ -236,12 +230,12 @@
                       <h5 class="font-weight-normal  m-0">
                         <p style="color:black;">{{ banner }}</p>
                       </h5>
-                      <p class="text-color m-0 pt-2 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
+<!--                      <p class="text-color m-0 pt-2 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
                     </div>
                     <div class="carousel-image">
                       <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202001/02/b005b352-279a-4fa7-9a1c-7c07353fc3d2.jpg" alt="" />
@@ -257,12 +251,12 @@
                       <h5 class="font-weight-normal  m-0">
                         <p style="color:black;">{{ banner }}</p>
                       </h5>
-                      <p class="text-color m-0 pt-2 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
+<!--                      <p class="text-color m-0 pt-2 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
                     </div>
                     <div class="carousel-image">
                       <img src="https://imgnews.pstatic.net/image/003/2020/01/01/NISI20200101_0000455879_web_20200101231840_20200101232403833.jpg?type=w647" alt="" />
@@ -278,12 +272,12 @@
                       <h5 class="font-weight-normal  m-0">
                         <p style="color:black;">{{ banner }}</p>
                       </h5>
-                      <p class="text-color m-0 pt-2 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
+<!--                      <p class="text-color m-0 pt-2 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
                     </div>
                     <div class="carousel-image">
                       <img src="https://imgnews.pstatic.net/image/214/2020/01/01/0001004439_001_20200101221504575.jpg?type=w647" alt="" />
@@ -299,12 +293,12 @@
                       <h5 class="font-weight-normal  m-0">
                         <p style="color:black;">{{ banner }}</p>
                       </h5>
-                      <p class="text-color m-0 pt-2 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
+<!--                      <p class="text-color m-0 pt-2 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
                     </div>
                     <div class="carousel-image">
                       <img src="https://imgnews.pstatic.net/image/016/2020/01/01/202001012143004648513_20200101215104_01_20200101215301629.jpg?type=w647" alt="" />
@@ -312,98 +306,98 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="py-3 border-bottom">
-                    <div class="d-flex align-items-center pb-2">
-                      <!-- <img
-                        src="{% static 'assets/images/dashboard/Profile_1.jpg' %}"
-                        class="img-xs img-rounded mr-2"
-                        alt="thumb"
-                      /> -->
-                      <span class="fs-12 text-muted">황성호</span>
-                    </div>
-                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
-                      <a href="http://www.donga.com/news/article/all/20200101/99047125/1">
-                        “납득할 수 없다”…檢, ‘선거 개입 의혹’ 송병기 영장 기각에 반발
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="py-3 border-bottom">
-                    <div class="d-flex align-items-center pb-2">
-                      <!-- <img
-                        src="{% static 'assets/images/dashboard/Profile_2.jpg' %}"
-                        class="img-xs img-rounded mr-2"
-                        alt="thumb"
-                      /> -->
-                      <span class="fs-12 text-muted">박종일</span>
-                    </div>
-                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
-                      <a href="https://view.asiae.co.kr/article/2020010121345036225">
-                        서대문구, 부동산중개사무소 개설(이전) 등록 원스톱으로!
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="pt-4 pb-4 border-bottom">
-                    <div class="d-flex align-items-center pb-2">
-                      <span class="fs-12 text-muted">박종일</span>
-                    </div>
-                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
-                      <a href="https://view.asiae.co.kr/article/2020010121272925933">
-                        2020년 예산 1조162억...강남구 민선 7기 무엇이 바뀌었나?
-                      </a> 
-                      
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="pt-3 pb-4 border-bottom">
-                    <div class="d-flex align-items-center pb-2">
-                      <span class="fs-12 text-muted">임성재</span>
-                    </div>
-                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
-                    <a href="http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4023452">
-                      악기 케이스에 몸 숨겨…카를로스 곤 전 닛산 회장의 일본 탈출극
-                    </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="pt-4 pb-4">
-                    <div class="d-flex align-items-center pb-2">
-                      <span class="fs-12 text-muted">홍진환</span>
-                    </div>
-                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
-                      <a href="http://www.donga.com/news/article/all/20200101/99045196/1">
-                        휴일 한 컷 새해 첫날, 윷놀이 즐기는 외국인들
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="pt-3 pb-4">
-                    <div class="d-flex align-items-center pb-2">
-                      <span class="fs-12 text-muted">김명일</span>
-                    </div>
-                    <p class="fs-14 m-0 font-weight-medium line-height-sm">
-                      <a href="https://www.chosun.com/national/national_general/2022/01/14/YWP36CEWGZEIJO7D433DD5H6D4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news">
-                        “800억 벌었는데 후배에 밥 안사” 주장에…비 “법적조치, 선처 절대 없다”
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!--            </div>-->
+<!--            <div class="col-lg-4">-->
+<!--              <div class="row">-->
+<!--&lt;!&ndash;                <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="py-3 border-bottom">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-flex align-items-center pb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                      &lt;!&ndash; <img&ndash;&gt;-->
+<!--&lt;!&ndash;                        src="{% static 'assets/images/dashboard/Profile_1.jpg' %}"&ndash;&gt;-->
+<!--&lt;!&ndash;                        class="img-xs img-rounded mr-2"&ndash;&gt;-->
+<!--&lt;!&ndash;                        alt="thumb"&ndash;&gt;-->
+<!--&lt;!&ndash;                      /> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="fs-12 text-muted">황성호</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="fs-14 m-0 font-weight-medium line-height-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="http://www.donga.com/news/article/all/20200101/99047125/1">&ndash;&gt;-->
+<!--&lt;!&ndash;                        “납득할 수 없다”…檢, ‘선거 개입 의혹’ 송병기 영장 기각에 반발&ndash;&gt;-->
+<!--&lt;!&ndash;                      </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="py-3 border-bottom">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-flex align-items-center pb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                      &lt;!&ndash; <img&ndash;&gt;-->
+<!--&lt;!&ndash;                        src="{% static 'assets/images/dashboard/Profile_2.jpg' %}"&ndash;&gt;-->
+<!--&lt;!&ndash;                        class="img-xs img-rounded mr-2"&ndash;&gt;-->
+<!--&lt;!&ndash;                        alt="thumb"&ndash;&gt;-->
+<!--&lt;!&ndash;                      /> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="fs-12 text-muted">박종일</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="fs-14 m-0 font-weight-medium line-height-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="https://view.asiae.co.kr/article/2020010121345036225">&ndash;&gt;-->
+<!--&lt;!&ndash;                        서대문구, 부동산중개사무소 개설(이전) 등록 원스톱으로!&ndash;&gt;-->
+<!--&lt;!&ndash;                      </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--              </div>-->
+<!--              <div class="row">-->
+<!--&lt;!&ndash;                <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="pt-4 pb-4 border-bottom">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-flex align-items-center pb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="fs-12 text-muted">박종일</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="fs-14 m-0 font-weight-medium line-height-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="https://view.asiae.co.kr/article/2020010121272925933">&ndash;&gt;-->
+<!--&lt;!&ndash;                        2020년 예산 1조162억...강남구 민선 7기 무엇이 바뀌었나?&ndash;&gt;-->
+<!--&lt;!&ndash;                      </a> &ndash;&gt;-->
+<!--&lt;!&ndash;                      &ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="pt-3 pb-4 border-bottom">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-flex align-items-center pb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="fs-12 text-muted">임성재</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="fs-14 m-0 font-weight-medium line-height-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4023452">&ndash;&gt;-->
+<!--&lt;!&ndash;                      악기 케이스에 몸 숨겨…카를로스 곤 전 닛산 회장의 일본 탈출극&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--              </div>-->
+<!--              <div class="row">-->
+<!--&lt;!&ndash;                <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="pt-4 pb-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-flex align-items-center pb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="fs-12 text-muted">홍진환</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="fs-14 m-0 font-weight-medium line-height-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="http://www.donga.com/news/article/all/20200101/99045196/1">&ndash;&gt;-->
+<!--&lt;!&ndash;                        휴일 한 컷 새해 첫날, 윷놀이 즐기는 외국인들&ndash;&gt;-->
+<!--&lt;!&ndash;                      </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="pt-3 pb-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-flex align-items-center pb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <span class="fs-12 text-muted">김명일</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="fs-14 m-0 font-weight-medium line-height-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="https://www.chosun.com/national/national_general/2022/01/14/YWP36CEWGZEIJO7D433DD5H6D4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news">&ndash;&gt;-->
+<!--&lt;!&ndash;                        “800억 벌었는데 후배에 밥 안사” 주장에…비 “법적조치, 선처 절대 없다”&ndash;&gt;-->
+<!--&lt;!&ndash;                      </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--              </div>-->
+<!--            </div>-->
           </div>
       
           <!-- 월드 뉴스 -->
@@ -411,7 +405,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="d-flex position-relative  float-left">
-                  <h3 class="section-title">World News</h3>
+                  <h3 class="section-title">정치</h3>
                 </div>
               </div>
             </div>
@@ -420,7 +414,7 @@
                 <div class="position-relative image-hover">
                   <img
                     src="https://imgnews.pstatic.net/image/003/2022/01/13/NISI20201006_0000612369_web_20201006145708_20220113104513282.jpg?type=w647"
-                    class="img-fluid"
+                    class="img-fluid1"
                     alt="world-news"
                   />
                   <span class="thumb-title">TRAVEL</span>
@@ -439,7 +433,7 @@
                 <div class="position-relative image-hover">
                   <img
                     src="https://imgnews.pstatic.net/image/001/2022/01/13/PYH2022011215740001301_P4_20220113155014790.jpg?type=w647"
-                    class="img-fluid"
+                    class="img-fluid1"
                     alt="world-news"
                   />
                   <span class="thumb-title">NEWS</span>
@@ -458,7 +452,7 @@
                 <div class="position-relative image-hover">
                   <img
                     src="{% static 'assets/images/dashboard/art.jpg' %}"
-                    class="img-fluid"
+                    class="img-fluid1"
                     alt="world-news"
                   />
                   <span class="thumb-title">ART</span>
@@ -477,7 +471,7 @@
                 <div class="position-relative image-hover">
                   <img
                     src="{% static 'assets/images/dashboard/business.jpg' %}"
-                    class="img-fluid"
+                    class="img-fluid1"
                     alt="world-news"
                   />
                   <span class="thumb-title">BUSINESS</span>
@@ -498,7 +492,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="d-flex position-relative float-left">
-                  <h3 class="section-title">Popular News</h3>
+                  <h3 class="section-title">경제</h3>
                 </div>
               </div>
             </div>
@@ -597,14 +591,101 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="d-flex position-relative float-left">
-                  <h3 class="section-title">Editor choice</h3>
+                  <h3 class="section-title">사회</h3>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-9">
-                <div class="row">
-                  <div class="col-sm-4  mb-5 mb-sm-2">
+<!--            <div class="world-news">-->
+<!--            <div class="row">-->
+<!--              <div class="col-sm-12">-->
+<!--                <div class="d-flex position-relative  float-left">-->
+<!--                  <h3 class="section-title">정치</h3>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-3 col-sm-6 grid-margin mb-5 mb-sm-2">-->
+<!--                <div class="position-relative image-hover">-->
+<!--                  <img-->
+<!--                    src="https://imgnews.pstatic.net/image/003/2022/01/13/NISI20201006_0000612369_web_20201006145708_20220113104513282.jpg?type=w647"-->
+<!--                    class="img-fluid"-->
+<!--                    alt="world-news"-->
+<!--                  />-->
+<!--                  <span class="thumb-title">TRAVEL</span>-->
+<!--                </div>-->
+<!--                <h5 class="font-weight-bold mt-3">-->
+<!--                  Refugees flood Turkey's border with Greece-->
+<!--                </h5>-->
+<!--                <p class="fs-15 font-weight-normal">-->
+<!--                  Lorem Ipsum has been the industry's standard dummy text-->
+<!--                </p>-->
+<!--                <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2"-->
+<!--                  >Read Article</a-->
+<!--                >-->
+<!--              </div>-->
+<!--              <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">-->
+<!--                <div class="position-relative image-hover">-->
+<!--                  <img-->
+<!--                    src="https://imgnews.pstatic.net/image/001/2022/01/13/PYH2022011215740001301_P4_20220113155014790.jpg?type=w647"-->
+<!--                    class="img-fluid"-->
+<!--                    alt="world-news"-->
+<!--                  />-->
+<!--                  <span class="thumb-title">NEWS</span>-->
+<!--                </div>-->
+<!--                <h5 class="font-weight-bold mt-3">-->
+<!--                  South Korea’s Moon Jae-in sworn in vowing address-->
+<!--                </h5>-->
+<!--                <p class="fs-15 font-weight-normal">-->
+<!--                  Lorem Ipsum has been the industry's standard dummy text-->
+<!--                </p>-->
+<!--                <a href="{% url 'news_post' %}" class="font-weight-bold text-dark pt-2"-->
+<!--                  >Read Article</a-->
+<!--                >-->
+<!--              </div>-->
+<!--              <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">-->
+<!--                <div class="position-relative image-hover">-->
+<!--                  <img-->
+<!--                    src="{% static 'assets/images/dashboard/art.jpg' %}"-->
+<!--                    class="img-fluid"-->
+<!--                    alt="world-news"-->
+<!--                  />-->
+<!--                  <span class="thumb-title">ART</span>-->
+<!--                </div>-->
+<!--                <h5 class="font-weight-bold mt-3">-->
+<!--                  These puppies are training to assist in avalanche rescue-->
+<!--                </h5>-->
+<!--                <p class="fs-15 font-weight-normal">-->
+<!--                  Lorem Ipsum has been the industry's standard dummy text-->
+<!--                </p>-->
+<!--                <a href="{% url 'art' %}" class="font-weight-bold text-dark pt-2"-->
+<!--                  >Read Article</a-->
+<!--                >-->
+<!--              </div>-->
+<!--              <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">-->
+<!--                <div class="position-relative image-hover">-->
+<!--                  <img-->
+<!--                    src="{% static 'assets/images/dashboard/business.jpg' %}"-->
+<!--                    class="img-fluid"-->
+<!--                    alt="world-news"-->
+<!--                  />-->
+<!--                  <span class="thumb-title">BUSINESS</span>-->
+<!--                </div>-->
+<!--                <h5 class="font-weight-bold mt-3">-->
+<!--                  'Love Is Blind' couple opens up about their first year-->
+<!--                </h5>-->
+<!--                <p class="fs-15 font-weight-normal">-->
+<!--                  Lorem Ipsum has been the industry's standard dummy text-->
+<!--                </p>-->
+<!--                <a href="{% url 'business' %}" class="font-weight-bold text-dark pt-2"-->
+<!--                  >Read Article</a-->
+<!--                >-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+            <div class="world-new">
+              <div class="row">
+<!--                <div class="row">-->
+                  <div class="col-lg-3 col-sm-6 grid-margin mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
                         src="{% static 'assets/images/dashboard/star-magazine-9.jpg' %}"
@@ -617,7 +698,7 @@
                       The island country that gave Mayor Pete his name
                     </h5>
                   </div>
-                  <div class="col-sm-4 mb-5 mb-sm-2">
+                  <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
                         src="{% static 'assets/images/dashboard/star-magazine-10.jpg' %}"
@@ -630,7 +711,7 @@
                       Disney parks expand (good) vegan food options
                     </h5>
                   </div>
-                  <div class="col-sm-4 mb-5 mb-sm-2">
+                  <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
                         src="{% static 'assets/images/dashboard/star-magazine-11.jpg' %}"
@@ -643,9 +724,9 @@
                       A hot springs where clothing is optional after dark
                     </h5>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col-sm-4 mb-5 mb-sm-2">
+<!--                </div>-->
+<!--                <div class="row mt-3">-->
+                  <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
                         src="{% static 'assets/images/dashboard/star-magazine-12.jpg' %}"
@@ -658,106 +739,162 @@
                       Japanese chef carves food into incredible pieces of art
                     </h5>
                   </div>
-                  <div class="col-sm-4 mb-5 mb-sm-2">
+<!--                  <div class="col-sm-4 mb-5 mb-sm-2">-->
+<!--                    <div class="position-relative image-hover">-->
+<!--                      <img-->
+<!--                        src="{% static 'assets/images/dashboard/star-magazine-13.jpg' %}"-->
+<!--                        class="img-fluid"-->
+<!--                        alt="world-news"-->
+<!--                      />-->
+<!--                      <span class="thumb-title">NEWS</span>-->
+<!--                    </div>-->
+<!--                    <h5 class="font-weight-600 mt-3">-->
+<!--                      The Misanthrope Society: A Taipei bar for people who-->
+<!--                    </h5>-->
+<!--                  </div>-->
+<!--                  <div class="col-sm-4 mb-5 mb-sm-2">-->
+<!--                    <div class="position-relative image-hover">-->
+<!--                      <img-->
+<!--                        src="{% static 'assets/images/dashboard/star-magazine-14.jpg' %}"-->
+<!--                        class="img-fluid"-->
+<!--                        alt="world-news"-->
+<!--                      />-->
+<!--                      <span class="thumb-title">TOURISM</span>-->
+<!--                    </div>-->
+<!--                    <h5 class="font-weight-600 mt-3">-->
+<!--                      From Pakistan to the Caribbean: Curry's journey-->
+<!--                    </h5>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-lg-3">-->
+<!--                <div class="position-relative mb-3">-->
+<!--                  <img-->
+<!--                    src="{% static 'assets/images/dashboard/star-magazine-15.jpg' %}"-->
+<!--                    class="img-fluid"-->
+<!--                    alt="world-news"-->
+<!--                  />-->
+<!--                  <div class="video-thumb text-muted">-->
+<!--                    <span><i class="mdi mdi-menu-right"></i></span>LIVE-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-sm-12">-->
+<!--                    <div class="d-flex position-relative float-left">-->
+<!--                      <h3 class="section-title">Latest News</h3>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-sm-12">-->
+<!--                    <div class="border-bottom pb-3">-->
+<!--                      <h5 class="font-weight-600 mt-0 mb-0">-->
+<!--                        South Korea’s Moon Jae-in sworn in vowing address-->
+<!--                      </h5>-->
+<!--                      <p class="text-color m-0 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-sm-12">-->
+<!--                    <div class="border-bottom pt-4 pb-3">-->
+<!--                      <h5 class="font-weight-600 mt-0 mb-0">-->
+<!--                        South Korea’s Moon Jae-in sworn in vowing address-->
+<!--                      </h5>-->
+<!--                      <p class="text-color m-0 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-sm-12">-->
+<!--                    <div class="border-bottom pt-4 pb-3">-->
+<!--                      <h5 class="font-weight-600 mt-0 mb-0">-->
+<!--                        South Korea’s Moon Jae-in sworn in vowing address-->
+<!--                      </h5>-->
+<!--                      <p class="text-color m-0 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-sm-12">-->
+<!--                    <div class="pt-4">-->
+<!--                      <h5 class="font-weight-600 mt-0 mb-0">-->
+<!--                        South Korea’s Moon Jae-in sworn in vowing address-->
+<!--                      </h5>-->
+<!--                      <p class="text-color m-0 d-flex align-items-center">-->
+<!--                        <span class="fs-10 mr-1">2 hours ago</span>-->
+<!--                        <i class="mdi mdi-bookmark-outline mr-3"></i>-->
+<!--                        <span class="fs-10 mr-1">126</span>-->
+<!--                        <i class="mdi mdi-comment-outline"></i>-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+            </div>
+            <div class="world-new">
+              <div class="row">
+<!--                <div class="row">-->
+                  <div class="col-lg-3 col-sm-6 grid-margin mb-5 mb-sm-2">
                     <div class="position-relative image-hover">
                       <img
-                        src="{% static 'assets/images/dashboard/star-magazine-13.jpg' %}"
+                        src="{% static 'assets/images/dashboard/star-magazine-9.jpg' %}"
+                        class="img-fluid"
+                        alt="world-news"
+                      />
+                      <span class="thumb-title">LIFESTYLE</span>
+                    </div>
+                    <h5 class="font-weight-600 mt-3">
+                      The island country that gave Mayor Pete his name
+                    </h5>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
+                    <div class="position-relative image-hover">
+                      <img
+                        src="{% static 'assets/images/dashboard/star-magazine-10.jpg' %}"
+                        class="img-fluid"
+                        alt="world-news"
+                      />
+                      <span class="thumb-title">SPORTS</span>
+                    </div>
+                    <h5 class="font-weight-600 mt-3">
+                      Disney parks expand (good) vegan food options
+                    </h5>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
+                    <div class="position-relative image-hover">
+                      <img
+                        src="{% static 'assets/images/dashboard/star-magazine-11.jpg' %}"
+                        class="img-fluid"
+                        alt="world-news"
+                      />
+                      <span class="thumb-title">INTERNET</span>
+                    </div>
+                    <h5 class="font-weight-600 mt-3">
+                      A hot springs where clothing is optional after dark
+                    </h5>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-5 mb-sm-2">
+                    <div class="position-relative image-hover">
+                      <img
+                        src="{% static 'assets/images/dashboard/star-magazine-12.jpg' %}"
                         class="img-fluid"
                         alt="world-news"
                       />
                       <span class="thumb-title">NEWS</span>
                     </div>
                     <h5 class="font-weight-600 mt-3">
-                      The Misanthrope Society: A Taipei bar for people who
-                    </h5>
-                  </div>
-                  <div class="col-sm-4 mb-5 mb-sm-2">
-                    <div class="position-relative image-hover">
-                      <img
-                        src="{% static 'assets/images/dashboard/star-magazine-14.jpg' %}"
-                        class="img-fluid"
-                        alt="world-news"
-                      />
-                      <span class="thumb-title">TOURISM</span>
-                    </div>
-                    <h5 class="font-weight-600 mt-3">
-                      From Pakistan to the Caribbean: Curry's journey
+                      Japanese chef carves food into incredible pieces of art
                     </h5>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="position-relative mb-3">
-                  <img
-                    src="{% static 'assets/images/dashboard/star-magazine-15.jpg' %}"
-                    class="img-fluid"
-                    alt="world-news"
-                  />
-                  <div class="video-thumb text-muted">
-                    <span><i class="mdi mdi-menu-right"></i></span>LIVE
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="d-flex position-relative float-left">
-                      <h3 class="section-title">Latest News</h3>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="border-bottom pb-3">
-                      <h5 class="font-weight-600 mt-0 mb-0">
-                        South Korea’s Moon Jae-in sworn in vowing address
-                      </h5>
-                      <p class="text-color m-0 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="border-bottom pt-4 pb-3">
-                      <h5 class="font-weight-600 mt-0 mb-0">
-                        South Korea’s Moon Jae-in sworn in vowing address
-                      </h5>
-                      <p class="text-color m-0 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="border-bottom pt-4 pb-3">
-                      <h5 class="font-weight-600 mt-0 mb-0">
-                        South Korea’s Moon Jae-in sworn in vowing address
-                      </h5>
-                      <p class="text-color m-0 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="pt-4">
-                      <h5 class="font-weight-600 mt-0 mb-0">
-                        South Korea’s Moon Jae-in sworn in vowing address
-                      </h5>
-                      <p class="text-color m-0 d-flex align-items-center">
-                        <span class="fs-10 mr-1">2 hours ago</span>
-                        <i class="mdi mdi-bookmark-outline mr-3"></i>
-                        <span class="fs-10 mr-1">126</span>
-                        <i class="mdi mdi-comment-outline"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- main-panel ends -->
@@ -765,84 +902,85 @@
         <!-- partial:partials/_footer.html -->
         <footer>
           <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="border-top"></div>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="templates/news-post.html">News</a></li>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="templates/world.html">World</a></li>
-                  <li><a href="templates/author.html">Magazine</a></li>
-                  <li><a href="templates/business.html">Business</a></li>
-                  <li><a href="templates/politics.html">Politics</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="templates/world.html">World</a></li>
-                  <li><a href="templatess/sports.html">Sports</a></li>
-                  <li><a href="templates/art.html">Art</a></li>
-                  <li><a href="#">Magazine</a></li>
-                  <li><a href="templates/real-estate.html">Real estate</a></li>
-                  <li><a href="templates/travel.html">Travel</a></li>
-                  <li><a href="templates/author.html">Author</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="#">Features</a></li>
-                  <li><a href="#">Photography</a></li>
-                  <li><a href="#">Video</a></li>
-                  <li><a href="pages/news-post.html">Newsletters</a></li>
-                  <li><a href="#">Live Events</a></li>
-                  <li><a href="#">Stores</a></li>
-                  <li><a href="#">Jobs</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="#">More</a></li>
-                  <li><a href="#">RSS</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">User Agreement</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
+<!--            <div class="row">-->
+<!--              <div class="col-sm-12">-->
+<!--                <div class="border-top"></div>-->
+<!--              </div>-->
+<!--              <div class="col-sm-3 col-lg-3">-->
+<!--                <ul class="footer-vertical-nav">-->
+<!--                  <li class="menu-title"><a href="templates/news-post.html">News</a></li>-->
+<!--                  <li><a href="index.html">Home</a></li>-->
+<!--                  <li><a href="templates/world.html">World</a></li>-->
+<!--                  <li><a href="templates/author.html">Magazine</a></li>-->
+<!--                  <li><a href="templates/business.html">Business</a></li>-->
+<!--                  <li><a href="templates/politics.html">Politics</a></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="col-sm-3 col-lg-3">-->
+<!--                <ul class="footer-vertical-nav">-->
+<!--                  <li class="menu-title"><a href="templates/world.html">World</a></li>-->
+<!--                  <li><a href="templatess/sports.html">Sports</a></li>-->
+<!--                  <li><a href="templates/art.html">Art</a></li>-->
+<!--                  <li><a href="#">Magazine</a></li>-->
+<!--                  <li><a href="templates/real-estate.html">Real estate</a></li>-->
+<!--                  <li><a href="templates/travel.html">Travel</a></li>-->
+<!--                  <li><a href="templates/author.html">Author</a></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="col-sm-3 col-lg-3">-->
+<!--                <ul class="footer-vertical-nav">-->
+<!--                  <li class="menu-title"><a href="#">Features</a></li>-->
+<!--                  <li><a href="#">Photography</a></li>-->
+<!--                  <li><a href="#">Video</a></li>-->
+<!--                  <li><a href="pages/news-post.html">Newsletters</a></li>-->
+<!--                  <li><a href="#">Live Events</a></li>-->
+<!--                  <li><a href="#">Stores</a></li>-->
+<!--                  <li><a href="#">Jobs</a></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="col-sm-3 col-lg-3">-->
+<!--                <ul class="footer-vertical-nav">-->
+<!--                  <li class="menu-title"><a href="#">More</a></li>-->
+<!--                  <li><a href="#">RSS</a></li>-->
+<!--                  <li><a href="#">FAQ</a></li>-->
+<!--                  <li><a href="#">User Agreement</a></li>-->
+<!--                  <li><a href="#">Privacy</a></li>-->
+<!--                  <li><a href="#">About us</a></li>-->
+<!--                  <li><a href="#">Contact</a></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--            </div>-->
             <div class="row">
               <div class="col-sm-12">
                 <div class="d-flex justify-content-between">
-                  <img src="{% static 'assets/images/logo.svg' %}" class="footer-logo" alt="" />
-
+                  <a href="{% url 'index' %}">
+                    <img src="{% static 'assets/images/logo.svg' %}" class="footer-logo" alt="" />
+                  </a>
                   <div class="d-flex justify-content-end footer-social">
                     <h5 class="m-0 font-weight-600 mr-3 d-none d-lg-flex">Follow on</h5>
                     <ul class="social-media">
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/?hl=ko">
                           <i class="mdi mdi-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                           <i class="mdi mdi-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/">
                           <i class="mdi mdi-youtube"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                           <i class="mdi mdi-linkedin"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                           <i class="mdi mdi-twitter"></i>
                         </a>
                       </li>
@@ -893,17 +1031,18 @@
     <script>
       // var request = new XMLHttpRequest();
       var start = Date.now();
+      var point = null;
       window.addEventListener('scroll', function(){
         let delta = Date.now() - start;
-      
+        point = window.scrollY;
         if (delta >= 3000){ //3초
           $.ajax({
             url: '/news/',
             type:'POST',
             dataType: 'JSON',
             data:{
-              'scroll': window.scrollY,
-              'deltaTime': dalta,
+              'scroll': point,
+              'deltaTime': delta,
               csrfmiddlewaretoken: '{{ csrf_token }}'
             },
             headers: { 'X-CSRFToken': '{{ csrf_token }}'},
@@ -916,6 +1055,7 @@
 
           })
         }
+        start = Date.now()
       })
     </script>
   </body>

@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render
 from .models import *
 from django.contrib import messages
@@ -13,7 +14,7 @@ logger = logging.getLogger('news')
 def index(req):
     raw = f"select ns_id, ns_content from N_summarization where ns_id = 3"
     NC = N_summarization.objects.raw(raw)
-    ns = NC[0].ns_content
+    # ns = NC[0].ns_content
 
     if req.method == 'POST':
         # form = TestForm(req.POST)
@@ -24,7 +25,8 @@ def index(req):
     else:
         logger.info("index GET log test")
 
-    return render(req, "index.html", {'banner': ns})
+    # return render(req, "index.html", {'banner': ns})
+    return render(req, "index.html")
 
 def index1(req):
     context = {
