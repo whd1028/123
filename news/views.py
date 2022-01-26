@@ -143,24 +143,3 @@ def banner1(req):
     NC = N_content.objects.raw(raw)
     ns = NC[0].n_content
     return render(req, 'banner1.html', {'banner1': ns})
-
-
-def banner2(req):
-    raw = f"select nc_id, n_content from N_content where nc_id = 9"
-    NC = N_content.objects.raw(raw)
-    ns = NC[0].n_content
-    return render(req, 'banner2.html', {'banner2': ns})
-
-
-def banner3(req):
-    raw = f"select nc_id, n_content from N_content where nc_id = 40"
-    NC = N_content.objects.raw(raw)
-    ns = NC[0].n_content
-    return render(req, 'banner3.html', {'banner3': ns})
-
-
-def banner4(req):
-    raw = f"select nc_id, n_content from N_content where nc_id = 64"
-    NC = N_content.objects.raw(raw)
-    ns = NC[0].n_content
-    return render(req, 'banner4.html', {'banner4': ns})
