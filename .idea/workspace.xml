@@ -5,23 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e895268e-061b-4591-846f-fc371fe7b723" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/123-master12345.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project1_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project1_1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KoBART-summarization" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/news/static/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/art.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/art.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/banner1.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/banner1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/banner2.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/banner2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/politics.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/politics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/sports.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/sports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/world.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/world.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +21,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2497b3rvu1eClbV0RhnHDJgZNS5" />
   <component name="ProjectViewState">
@@ -75,6 +77,11 @@
           <url>file://$PROJECT_DIR$/mysite/settings.py</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/manage.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -15,7 +15,7 @@ gulp.task("sass", function() {
   return gulp
     .src("./assets/scss/style.scss")
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
+    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError)
     .pipe(sourcemaps.write("./maps"))
     .pipe(gulp.dest("./assets/css"))
     .pipe(browserSync.stream());

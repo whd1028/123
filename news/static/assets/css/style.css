@@ -498,8 +498,8 @@ mark,
 }
 
 .img-fluid1 {
-  width: 260px;
-  height: 230px;
+  width: 400px;
+  height: 250px;
 }
 
 .img-thumbnail {
@@ -4740,16 +4740,16 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #fff;
+  border-color: #000;
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: #000;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
-  border-color: #dee2e6;
+  border-color: #000;
 }
 
 .pagination-lg .page-link {
@@ -9837,24 +9837,24 @@ h6, .h6 {
 
 /* Pagination */
 .pagination {
-  padding-bottom: 100px;
-  padding-top: 92px;
+  padding-bottom: 10px;
+  padding-top: 12px;
 }
 
 .pagination .page-item .page-link {
-  border-color: #dbdbdb;
-  color: #b5b5b5;
+  border-color: #fff;
+  color: #000;
   font-size: 14px;
   font-weight: 500;
-  padding: 15px 64px;
+  padding: 20px 44.3px 20px;
 }
 
 .pagination .page-item .active {
-  color: #007bff;
+  color: #000;
 }
 
 .pagination .page-item.active .page-link, .pagination .page-item:hover .page-link, .pagination .page-item:focus .page-link, .pagination .page-item:active .page-link {
-  color: #007bff;
+  color: #000;
 }
 
 /* Buttons */

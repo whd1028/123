@@ -128,6 +128,7 @@ def travel(req):
 
     return render(req, "travel.html", context=context)
 
+
 def news_post(req):
     # post_latest = Post.objects.order_by("-createDate")[:6]
     context = {
@@ -136,11 +137,13 @@ def news_post(req):
 
     return render(req, "news_post.html", context=context)
 
+
 def banner1(req):
     raw = f"select nc_id, n_content from N_content where nc_id = 1"
     NC = N_content.objects.raw(raw)
     ns = NC[0].n_content
     return render(req, 'banner1.html', {'banner1': ns})
+
 
 def banner2(req):
     raw = f"select nc_id, n_content from N_content where nc_id = 9"
@@ -154,6 +157,7 @@ def banner3(req):
     NC = N_content.objects.raw(raw)
     ns = NC[0].n_content
     return render(req, 'banner3.html', {'banner3': ns})
+
 
 def banner4(req):
     raw = f"select nc_id, n_content from N_content where nc_id = 64"
