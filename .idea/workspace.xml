@@ -9,8 +9,8 @@
       <change beforePath="$PROJECT_DIR$/news/templates/art.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/art.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/author.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/politics.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/politics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/sports.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/sports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/world.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/world.html" afterDir="false" />
     </list>
