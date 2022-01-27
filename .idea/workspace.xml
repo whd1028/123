@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e895268e-061b-4591-846f-fc371fe7b723" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/art.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/art.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/contactus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/news_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/politics.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/politics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/sports.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/sports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/templates/world.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/world.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +74,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mysite/settings.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/manage.py</url>
           <line>2</line>

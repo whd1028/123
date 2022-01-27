@@ -28,14 +28,6 @@ def index(req):
     # return render(req, "index.html", {'banner': ns})
     return render(req, "index.html")
 
-def index1(req):
-    context = {
-        # "post_latest": post_latest
-    }
-
-    return render(req, "index1.html", context=context)
-
-
 # def i_sum(req):
 #     raw = f"select ns_id, ns_content from N_summarization where ns_id = 9"
 #     NC = N_summarization.objects.raw(raw)
@@ -129,13 +121,13 @@ def travel(req):
     return render(req, "travel.html", context=context)
 
 
-def news_post(req):
+def contactus(req):
     # post_latest = Post.objects.order_by("-createDate")[:6]
     context = {
         # "post_latest": post_latest
     }
 
-    return render(req, "news_post.html", context=context)
+    return render(req, "contactus.html", context=context)
 
 
 def banner1(req):
