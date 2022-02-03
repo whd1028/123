@@ -1,9 +1,5 @@
-import re
 from django.shortcuts import render
 from .models import *
-from django.contrib import messages
-from django.db.models import Q
-#from django.views.generic import View
 
 # -2022.01.24 park_jong_won
 import logging
@@ -48,6 +44,7 @@ def index(req):
 #     ns = NC[0].ns_content
 
 #     return render(req, "index.html", {'i_sum3': ns})        
+
 
 def author(req):
     # post_latest = Post.objects.order_by("-createDate")[:6]
@@ -135,3 +132,17 @@ def banner1(req):
     NC = N_content.objects.raw(raw)
     ns = NC[0].n_content
     return render(req, 'banner1.html', {'banner1': ns})
+
+
+def banner2(req):
+    raw = f"select nc_id, n_content from N_content where nc_id = 1"
+    NC = N_content.objects.raw(raw)
+    ns = NC[1].n_content
+    return render(req, 'banner1.html', {'banner2': ns})
+
+
+def banner3(req):
+    raw = f"select nc_id, n_content from N_content where nc_id = 1"
+    NC = N_content.objects.raw(raw)
+    ns = NC[2].n_content
+    return render(req, 'banner1.html', {'banner3': ns})

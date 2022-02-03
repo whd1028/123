@@ -15,7 +15,7 @@ urlpatterns = [
     path("travel/", views.travel, name="travel"),
     path("news_post/", views.contactus, name="contactus"),
     path("banner1/", views.banner1, name="banner1"),
-    path("banner2/", views.banner1, name="banner1"),
-    path("banner3/", views.banner1, name="banner1"),
+    path("banner1/", views.banner2, name="banner2"),
+    path("banner1/", views.banner3, name="banner3"),
     path("banner4/", views.banner1, name="banner1"),
 ]
