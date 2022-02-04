@@ -146,7 +146,7 @@
                       <a class="nav-link" href="{% url 'business' %}">사회</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'contactus' %}">생활/문화</a>
+                      <a class="nav-link" href="{% url 'sports' %}">생활/문화</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'art' %}">IT/과학</a>
@@ -166,118 +166,77 @@
         </div>
       </header>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text-center">
-              <h1 class="text-center mt-5">
-                Contact Us
-              </h1>
-              <p class="text-secondary fs-15 mb-5 pb-3">
-                This text can be added in the category Description field in
-                dashboard
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="contact-wrap">
-          <div class="row">
-            <div class="col-lg-6  mb-5 mb-sm-2">
-              <form>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        aria-describedby="name"
-                        placeholder="Name *"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        aria-describedby="email"
-                        placeholder="Email *"
-                      />
-                    </div>
-                  </div>
-                </div>
+        <div class="world-news">
+            {% load mathfilters %}
+            <div id="autocontent">
+              <div class="page-list" style="margin-top: 2rem;">
+                <!-- 페이지리스트 -->
+                {% for page_number in page_obj.paginator.page_range %}
+                {% if page_number >= page_obj.number|add:-5 and page_number <= page_obj.number|add:5 %}
+                  {% if page_number == page_obj.number %}
 
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        aria-describedby="Subject"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                </div>
+                  {% for news in news_list %}
+                    {% if forloop.counter > page_number|add:-1|mul:10 and forloop.counter <= page_number|mul:10 %}
 
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control textarea"
-                        placeholder="Message"
-                        id="message"
-                      ></textarea>
+                    <div class="row mb-5">
+                      <div class="col-lg-6">
+                        <img src="{{ news.nd_img }}" class="img-fluid1" alt="world-news" />
+                      </div>
+                      <div class="col-lg-6">
+                        <h1 class="font-weight-600 mt-5">
+                          {{ news.n_title }}
+                        </h1>
+                        <p>
+                          {{ news.nso_content }}
+                        </p>
+                        <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                    {% endif %}
+                  {% endfor %}
+                  {% endif %}
+                {% endif %}
+                {% endfor %}
+                {% load mathfilters %}
+                <div id="paging">
+                  <ul class="pagination justify-content-center" style="margin-top: 2rem;">
+                    {% if page_obj.has_previous %}
+                    <li class="page-item">
+                      <a class="page-link" href="?&page={{ page_obj.previous_page_number }}">이전</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                      <a class="page-link" tabindex="-1" aria-disabled="true" href="#">이전</a>
+                    </li>
+                    {% endif %}
+                    {% for page_number in page_obj.paginator.page_range %}
+                    {% if page_number >= page_obj.number|add:-5 and page_number <= page_obj.number|add:5 %}
+                      {% if page_number == page_obj.number %}
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+                      </li>
+                      {% else %}
+                      <li class="page-item">
+                        <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+                      </li>
+                      {% endif %}
+                    {% endif %}
+                    {% endfor %}
 
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group">
-                      <a href="#" class="btn btn-lg btn-dark font-weight-bold"
-                        >Submit</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="col-lg-6 mb-2 mb-lg-2">
-              <div class="contact-right-padding">
-                <div class="row">
-                  <div class="col-sm-12  mb-2 mb-lg-2">
-                    <h1>GET IN TOUCH</h1>
-                    <p class="mb-4 fs-15">
-                      This text can be added in the category Description field
-                      in dashboard
-                    </p>
-                    <p class="mb-0 font-weight-bold fs-14">
-                      ADDRESS
-                    </p>
-                    <p class="mb-4 font-weight-medium fs-14">
-                      329 South Street Court - Albany, NY 83741
-                    </p>
-                    <p class="mb-0 font-weight-bold fs-14">
-                      PHONE
-                    </p>
-                    <p class="mb-4 font-weight-medium fs-14">
-                      (123) 456 - 7890
-                    </p>
-                    <p class="mb-0 font-weight-bold fs-14">
-                      EMAIL
-                    </p>
-                    <p class="mb-4 font-weight-medium fs-14">
-                      info@example.com
-                    </p>
-                  </div>
+                    {% if page_obj.has_next %}
+                    <li class="page-item">
+                      <a class="page-link" href="?&page={{ page_obj.next_page_number }}">다음</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item">
+                      <a class="page-link" href="?&page={{ page_obj.next_page_number }}">다음</a>
+                    </li>
+                    {% endif %}
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
     <!-- container-scroller ends -->
@@ -287,49 +246,6 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="border-top"></div>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="post.html">News</a></li>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="./world.html">World</a></li>
-                  <li><a href="./author.html">Magazine</a></li>
-                  <li><a href="./business.html">Business</a></li>
-                  <li><a href="./politics.html">Politics</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="./world.html">World</a></li>
-                  <li><a href="./sports.html">Sports</a></li>
-                  <li><a href="./art.html">Art</a></li>
-                  <li><a href="#">Magazine</a></li>
-                  <li><a href="./real-estate.html">Real estate</a></li>
-                  <li><a href="./travel.html">Travel</a></li>
-                  <li><a href="./author.html">Author</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="#">Features</a></li>
-                  <li><a href="#">Photography</a></li>
-                  <li><a href="#">Video</a></li>
-                  <li><a href="post.html">Newsletters</a></li>
-                  <li><a href="#">Live Events</a></li>
-                  <li><a href="#">Stores</a></li>
-                  <li><a href="#">Jobs</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3 col-lg-3">
-                <ul class="footer-vertical-nav">
-                  <li class="menu-title"><a href="#">More</a></li>
-                  <li><a href="#">RSS</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">User Agreement</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="./aboutus.html">About us</a></li>
-                  <li><a href="./contactus.html">Contact</a></li>
-                </ul>
               </div>
             </div>
             <div class="row">
