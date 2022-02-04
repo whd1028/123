@@ -241,6 +241,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="container">
           <div class="world-news">
             <div class="row">
               <div class="col-sm-12">
@@ -249,67 +251,75 @@
                 </div>
               </div>
             </div>
-            <div class="row mb-5">
-              <div class="col-lg-6">
-                <img
-                  src="https://imgnews.pstatic.net/image/003/2022/01/13/NISI20201006_0000612369_web_20201006145708_20220113104513282.jpg?type=w647"
-                  class="img-fluid1" alt="world-news" />
-              </div>
-              <div class="col-lg-6">
-                <h1 class="font-weight-600 mt-5">
-                  Refugees flood Turkey's border with Greece
-                </h1>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text
-                </p>
-                <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
+            {% load mathfilters %}
+            <div id="autocontent">
+              <div class="page-list" style="margin-top: 2rem;">
+                <!-- 페이지리스트 -->
+                {% for page_number in page_obj.paginator.page_range %}
+                {% if page_number >= page_obj.number|add:-5 and page_number <= page_obj.number|add:5 %}
+                  {% if page_number == page_obj.number %}
+
+                  {% for news in news_list %}
+                    {% if forloop.counter > page_number|add:-1|mul:3 and forloop.counter <= page_number|mul:3 %}
+
+                    <div class="row mb-5">
+                      <div class="col-lg-6">
+                        <img src="{{ news.nd_img }}" class="img-fluid1" alt="world-news" />
+                      </div>
+                      <div class="col-lg-6">
+                        <h1 class="font-weight-600 mt-5">
+                          {{ news.n_title }}
+                        </h1>
+                        <p>
+                          {{ news.nso_content }}
+                        </p>
+                        <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
+                      </div>
+                    </div>
+                    {% endif %}
+                  {% endfor %}
+                  {% endif %}
+                {% endif %}
+                {% endfor %}
+                {% load mathfilters %}
+                <div id="paging">
+                  <ul class="pagination justify-content-center" style="margin-top: 2rem;">
+                    {% if page_obj.has_previous %}
+                    <li class="page-item">
+                      <a class="page-link" href="?&page={{ page_obj.previous_page_number }}">이전</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                      <a class="page-link" tabindex="-1" aria-disabled="true" href="#">이전</a>
+                    </li>
+                    {% endif %}
+                    {% for page_number in page_obj.paginator.page_range %}
+                    {% if page_number >= page_obj.number|add:-5 and page_number <= page_obj.number|add:5 %}
+                      {% if page_number == page_obj.number %}
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+                      </li>
+                      {% else %}
+                      <li class="page-item">
+                        <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+                      </li>
+                      {% endif %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if page_obj.has_next %}
+                    <li class="page-item">
+                      <a class="page-link" href="?&page={{ page_obj.next_page_number }}">다음</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item">
+                      <a class="page-link" href="?&page={{ page_obj.next_page_number }}">다음</a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="row mb-5">
-              <div class="col-lg-6">
-                <img
-                  src="https://imgnews.pstatic.net/image/003/2022/01/13/NISI20201006_0000612369_web_20201006145708_20220113104513282.jpg?type=w647"
-                  class="img-fluid1" alt="world-news" />
-              </div>
-              <div class="col-lg-6">
-                <h1 class="font-weight-600 mt-5">
-                  Refugees flood Turkey's border with Greece
-                </h1>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text
-                </p>
-                <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
-              </div>
-            </div>
-            <div class="row mb-5">
-              <div class="col-lg-6">
-                <img
-                  src="https://imgnews.pstatic.net/image/003/2022/01/13/NISI20201006_0000612369_web_20201006145708_20220113104513282.jpg?type=w647"
-                  class="img-fluid1" alt="world-news" />
-              </div>
-              <div class="col-lg-6">
-                <h1 class="font-weight-600 mt-5">
-                  Refugees flood Turkey's border with Greece
-                </h1>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text
-                </p>
-                <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
-              </div>
-            </div>
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-              <li class="page-item"><a class="page-link" href="#">9</a></li>
-              <li class="page-item"><a class="page-link" href="#">10</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
           </div>
         </div>
         <div class="container">
@@ -363,19 +373,6 @@
                 <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
               </div>
             </div>
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-              <li class="page-item"><a class="page-link" href="#">9</a></li>
-              <li class="page-item"><a class="page-link" href="#">10</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
           </div>
         </div>
         <div class="container">
@@ -431,19 +428,6 @@
                     <a href="{% url 'travel' %}" class="font-weight-bold text-dark pt-2">Read Article</a>
                   </div>
                 </div>
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                    <li class="page-item"><a class="page-link" href="#">7</a></li>
-                    <li class="page-item"><a class="page-link" href="#">8</a></li>
-                    <li class="page-item"><a class="page-link" href="#">9</a></li>
-                    <li class="page-item"><a class="page-link" href="#">10</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
               </div>
               <footer>
                 <div class="container">
